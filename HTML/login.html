@@ -6,35 +6,35 @@
     <title>Formulario de Creación de Usuario</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
-<body>
+<body style="width: 1280px; height: 840px; background-image: url(../resource/fondo1.jpg) ;">
     <header>
 
     </header>
     <nav></nav>
     <article>
         <div id="divCont"> 
-            <h2>Crear Usuario</h2>
+            <h2 id="titulo"> Crear Usuario</h2>
             <form>
                 <div id="divDatos">
-                    <label id="LblNombre" for="nombre"> Nombre</label>
-                    <input id="nombre" name="nombre" type="text" value="" placeholder="Ingrese su nombre" required />
+                    <label class="lblDatos" id="LblNombre" for="nombre"> Nombre</label>
+                    <input class="inpDatos" id="nombre" name="nombre" type="text" value="" placeholder="Ingrese su nombre" required />
                     <br /> <br />
-                    <label id="lblApellido" for="apellido"> Apellido</label>
-                    <input id="apellido" name="apellido" type="text" value="" placeholder="Ingrese su apellido" required />
+                    <label class="lblDatos" id="lblApellido" for="apellido"> Apellido</label>
+                    <input class="inpDatos" id="apellido" name="apellido" type="text" value="" placeholder="Ingrese su apellido" required />
                     <br /> <br />
-                    <label id="lblIden" for="ident"> Identificación </label>
-                    <input id="ident" name="ident" type="number" value="" placeholder="Ingrese su Identificación" />
+                    <label class="lblDatos" id="lblIden" for="ident"> Identificación </label>
+                    <input class="inpDatos" id="ident" name="ident" type="number" value="" placeholder="Ingrese su Identificación" />
                     <br /> <br />
-                    <label id="contraseña" for="contr"> contraseña </label>
-                    <input id="contr" name="contr" type="password" value="" placeholder="Ingrese su contraseña" />
+                    <label class="lblDatos" id="contraseña" for="contr"> contraseña </label>
+                    <input class="inpDatos" id="contr" name="contr" type="password" value="" placeholder="Ingrese su contraseña" />
                     <br /> <br />
                    
                 </div>
                 <br /> <br />
                 
                 <div>
-                    <input type="submit" value="Guardar" />
-                    <button type="reset">Cancelar</button>
+                    <input class="inpDatos" type="submit" value="Guardar" />
+                    <button class="inpDatos" type="reset">Cancelar</button>
                 </div>
             </form>
         </div>

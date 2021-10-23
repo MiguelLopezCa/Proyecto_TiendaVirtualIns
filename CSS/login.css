@@ -1,7 +1,12 @@
-body{
-    background-image: url(../resource/fondo1.jpg) ;
+*{
+    margin: 0px ;
+    padding: 0px;
+    min-width: 250px;
+    max-width: 1260px;
     background-repeat: no-repeat;
     margin: 0;
+    max-height: 500px;
+    min-height: 300px;
 }
 
 #divCont{
@@ -9,13 +14,32 @@ body{
     opacity:70%;
     position:absolute ;
     color: blue;
-    width:400px;
-    height: 300px;
-    top: calc(50% - 150px);
-    left: calc(50% - 200px);
+    width:700px;
+    height: 500px;
+    top: calc(50% - 250px);
+    left: calc(50% - 350px);
     border: solid black;
     border-radius: 3%;
 }#divDatos{
     color: black;
     opacity:100%;
+}
+.inpDatos{
+    position: absolute;
+    width: 200px ;
+    height: 50px;
+    max-height: 200px;
+    min-height: 50px;
+}
+.lblDatos{
+    position: absolute;
+    width: 200px ;
+    height: 50px;
+    max-height: 200px;
+    min-height: 50px;
+}
+#titulo{
+    position: absolute;
+    width: 200px;
+    left: calc(50% - 100px);
 }
