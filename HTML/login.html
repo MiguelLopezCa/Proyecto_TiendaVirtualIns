@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Formulario de Creación de Usuario</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
     <header>
@@ -14,19 +15,20 @@
         <div id="divCont"> 
             <h2>Crear Usuario</h2>
             <form>
-                <div>
+                <div id="divDatos">
                     <label id="LblNombre" for="nombre"> Nombre</label>
                     <input id="nombre" name="nombre" type="text" value="" placeholder="Ingrese su nombre" required />
                     <br /> <br />
                     <label id="lblApellido" for="apellido"> Apellido</label>
                     <input id="apellido" name="apellido" type="text" value="" placeholder="Ingrese su apellido" required />
                     <br /> <br />
-                    <label id="telefono" for="tel"> Telefono </label>
-                    <input id="tel" name="tel" type="tel" value="" placeholder="Ingrese su telefono" />
+                    <label id="lblIden" for="ident"> Identificación </label>
+                    <input id="ident" name="ident" type="number" value="" placeholder="Ingrese su Identificación" />
                     <br /> <br />
-                    <label id="lblIden" for="identificacion"> Identificación </label>
-                    <input id="ident" name="ident" type="password" value="" placeholder="Ingrese su contraseña" />
+                    <label id="contraseña" for="contr"> contraseña </label>
+                    <input id="contr" name="contr" type="password" value="" placeholder="Ingrese su contraseña" />
                     <br /> <br />
+                   
                 </div>
                 <br /> <br />
                 
