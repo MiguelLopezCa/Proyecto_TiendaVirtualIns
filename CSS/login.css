@@ -1,0 +1,21 @@
+body{
+    background-image: url(../resource/fondo1.jpg) ;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#divCont{
+    background-color: white; 
+    opacity:70%;
+    position:absolute ;
+    color: blue;
+    width:400px;
+    height: 300px;
+    top: calc(50% - 150px);
+    left: calc(50% - 200px);
+    border: solid black;
+    border-radius: 3%;
+}#divDatos{
+    color: black;
+    opacity:100%;
+}
