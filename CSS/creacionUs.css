@@ -44,7 +44,7 @@ body{
 }
 #LblNombre{
     position: absolute;
-    left: calc(20% - 100px);
+    left: calc(30% - 100px);
     top: 10%;
 }
 #nombre{
@@ -54,33 +54,74 @@ body{
 }
 #lblApellido{
     position: absolute;
-    left: calc(20% - 100px);
-    top: 30%;
+    left: calc(30% - 100px);
+    top: 20%;
 }
 #apellido{
     position: absolute;
     left: calc(50% - 100px);
-    top: 30%;
+    top: 20%;
 }
 #lblIden{
     position: absolute;
-    left: calc(20% - 100px);
-    top: 50%;
+    left: calc(30% - 100px);
+    top: 30%;
 }
 #ident{
     position: absolute;
     left: calc(50% - 100px);
-    top: 50%;
+    top: 30%;
 }
 #contraseña{
     position: absolute;
-    left: calc(20% - 100px);
-    top: 70%;
+    left: calc(30% - 100px);
+    top: 40%;
 }
 #contr{
     position: absolute;
     left: calc(50% - 100px);
+    top: 40%;
+}
+#contraseña1{
+    position: absolute;
+    left: calc(30% - 100px);
+    top: 50%;
+}
+#contr1{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 50%;
+}
+#lblUsuario{
+    position: absolute;
+    left: calc(30% - 100px);
+    top: 60%; 
+}
+#usuario{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 60%; 
+}
+#lblRol{
+    position: absolute;
+    left: calc(30% - 100px);
     top: 70%;
+}
+#selectRol{
+    width: 210px;
+    position: absolute;
+    left: calc( 50% - 100px);
+    top: 70%;
+}
+#telefono{
+    position: absolute;
+    left: calc( 30% - 100px);
+    top: 80%;
+}
+#tel{
+    position: absolute;
+    left: calc( 50% - 100px);
+    top: 80%;
 }
 #btnGuardar{
     position: absolute;
