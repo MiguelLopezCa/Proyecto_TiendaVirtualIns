@@ -7,11 +7,13 @@
 </head>
 <body>
     <div id="conten">
+        <form action="validar.php" method="post">
             <h1 id="titulo">Iniciar sesión</h1>
             <input id="usuario" name="usuario" type="text"  class="inpDatos"  placeholder="Ingrese su Usuario" required >
             <input type="password"  class="inpDatos" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" required >
-            <button id="btnIngresar" class="inpDatos cre" onclick="window.location.href='PaginaPrincipal.html'" type="submit" >INGRESAR</button>
+            <input id="btnIngresar" class="inpDatos cre" type="submit" value="Ingresar">
             <button id="btnRegistrar" class="inpDatos cre " onclick="window.location.href='creacionUs.html'" type="submit">REGISTRARSE</button>
+        </form>
     </div>
 </body>
 </html>
