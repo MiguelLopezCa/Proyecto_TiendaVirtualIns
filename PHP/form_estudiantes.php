@@ -96,7 +96,7 @@ $persona =[
             
             <button  id="btnGuardar" class="inpDatos btnCr" type="submit">Guardar</button>
                     <button id="btnCancelar" class="inpDatos btnCr" type="reset">Cancelar</button>
-                    <button id="btnRegresar" class="inpDatos btnCr" onclick="window.location.href='index.php'" type="button">Regresar</button>
+                    <button id="btnRegresar" class="inpDatos btnCr" onclick="window.location.href='../HTML/inicio.html'" type="button">Regresar</button>
                    
         </form>
 </div>
