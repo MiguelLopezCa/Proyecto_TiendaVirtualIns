@@ -20,9 +20,13 @@ $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
     <table>
         <thead>
             <tr>
-                <th>Código</th>
-                <th>Estudiantes</th>
-                <th>Edad</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Identificación</th>
+                <th>Contraseña</th>
+                <th>Usuario</th>
+                <th>Rol</th>
+                <th>Telefono</th>
                 <th>Modificar</th>
                 <th>Eliminar</th>
                 
@@ -35,21 +39,23 @@ $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
             if ($resultadoQuery->num_rows>0){
                 while($row=$resultadoQuery->fetch_assoc()){
                     echo '<tr>';
-                    echo '<td>'.$row['codigo'].'</td>';
+                    echo '<td>'.$row['nombre'].''.$row['apellido'].'</td>';
+                    echo '<td>'.$row['edad'].'</td>';
+                    echo '<td>';
+                    echo '<tr>';
                     echo '<td>'.$row['nombre'].''.$row['apellido'].'</td>';
                     echo '<td>'.$row['edad'].'</td>';
                     echo '<td>';
                     echo '<a href="form_estudiantes.php?idE='.$row['id'].' ">Modificar</a>';
                     echo '</td>';
                     echo '<td>';
-                    echo '<a href="eliminar.php?
-                    idE='.$row['id'].'">Eliminar</a>';
+                    echo '<a href="eliminar.php?idE='.$row['id'].'">Eliminar</a>';
                     echo '</td>';
                     echo '</td>';
                 }
               }else{
                   echo'<tr>';
-                  echo'<td colspan="3">no hay registros</td>';
+                  echo'<td colspan="7">no hay registros</td>';
                   echo'</tr>';
               }
         ?>
