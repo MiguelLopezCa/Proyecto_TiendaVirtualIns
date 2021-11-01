@@ -1,15 +1,15 @@
 <?php 
-$id = empty($_GET['idE']) ? 0 : $_GET['idE'];
+$identificacion = empty($_GET['identificacion']) ? 0 : $_GET['identificacion'];
 $servidorDB = "localhost:3306";
-$nombreDb = "estudiantes_db";
+$nombreDb = "tiendavirtual";
 $usuarioDb = "root";
 $passwordDB = "";
 
 // Create connection
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
 
-$sql="delete from estudiante ";
-$sql .= " where id=" . $id;
+$sql="delete from persona ";
+$sql .= " where identificacion=" . $identificacion;
 
 $resultadoQuery= $conn->query($sql);
 

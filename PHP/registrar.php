@@ -1,20 +1,23 @@
 <?php 
-$estudiante =[
-    'codigo'=>$_POST['codigoInput'],
-    'nombres'=>$_POST['nombresInput'],
-    'apellidos'=>$_POST['apellidosInput'],
-    'edad'=>$_POST['edadInput']
+$persona =[
+    'nombres'=>$_POST['nombre'],
+    'apellidos'=>$_POST['apellido'],
+    'identificacion'=>$_POST['identificacion'],
+    'contraseña'=>$_POST['contraseña'],
+    'usuario'=>$_POST['usuario'],
+    'rol'=>$_POST['rol'],
+    'telefono'=>$_POST['telefono'],
 ];
 $servidorDB = "localhost:3306";
-$nombreDb = "estudiantes_db";
+$nombreDb = "tiendavirtual";
 $usuarioDb = "root";
 $passwordDB = "";
 
 // Create connection
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
 
-$sql="insert into estudiante (codigo , nombre , apellido , edad)";
-$sql.="values('".$estudiante['codigo'] ."','".$estudiante['nombres'] ."','".$estudiante['apellidos'] ."',". $estudiante['edad'].")";
+$sql="insert into persona (nombre , apellido , identificacion , contraseña , usuario , rol , telefono )";
+$sql.="values('".$persona['nombres'] ."','".$persona['apellidos'] ."','".$persona['identificacion'] ."','".$persona['contraseña'] ."','".$persona['usuario'] ."','".$persona['rol'] ."',".$persona['telefono'] .")";
 $resultadoQuery= $conn->query($sql);
 
 $conn->close();
@@ -37,7 +40,7 @@ $conn->close();
     }else{
         echo '<p>presentó un error al guardar los datos. Vuelva a intentar</P>';
         echo '<br>'; 
-        echo '<a href= "form_estudiantes.php">Volver</a>';
+        echo '<a href= "creacionUsuario.php">Volver</a>';
     }
     ?>
 </body>

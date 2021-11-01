@@ -1,26 +1,31 @@
 <?php 
-$estudiante =[
-    'id'=>$_POST['idInput'],
-    'codigo'=>$_POST['codigoInput'],
-    'nombres'=>$_POST['nombresInput'],
-    'apellidos'=>$_POST['apellidosInput'],
-    'edad'=>$_POST['edadInput']
+$persona =[
+    'nombres'=>'',
+    'apellidos'=>'',
+    'identificacion'=>'',
+    'contraseña'=>'',
+    'usuario'=>'',
+    'rol'=>'',
+    'telefono'=>3,
 ];
 $servidorDB = "localhost:3306";
-$nombreDb = "estudiantes_db";
+$nombreDb = "tiendavirtual";
 $usuarioDb = "root";
 $passwordDB = "";
 
 // Create connection
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
 
-$sql="update estudiante set";
-$sql.= " codigo='".$estudiante['codigo']."',";
-$sql.= " nombre='".$estudiante['nombres']."',";
-$sql.= " apellido='".$estudiante['apellidos']."',";
-$sql.= " edad=".$estudiante['edad'];
+$sql="update persona set";
+$sql.= " nombre='".$persona['nombres']."',";
+$sql.= " apellido='".$persona['apellidos']."',";
+$sql.= " contraseña='".$persona['contraseña']."',";
+$sql.= " usuario='".$persona['usuario']."',";
+$sql.= " rol='".$persona['rol']."',";
+$sql.= " telefono='".$persona['telefono']."',";
 
-$sql.=" where id=".$estudiante['id'];
+
+$sql.=" where id=".$persona['identificacion'];
 
 $resultadoQuery= $conn->query($sql);
 

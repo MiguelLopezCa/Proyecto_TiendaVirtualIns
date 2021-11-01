@@ -18,7 +18,7 @@ $persona =[
 <head>
     <meta charset="UTF-8">
     <title>Estudiantes</title>
-    <link rel="stylesheet" href="../css/creacionUs.css">
+    <link rel="stylesheet" href="../css/ceracionUsua.css">
 </head>
 <body style=" background-image: url(../resource/fondo1.jpg) ;">
 
@@ -30,12 +30,12 @@ $persona =[
     <?php
     if (!empty($id)){
         $servidorDB = "localhost:3306";
-        $nombreDb = "estudiantes_db";
+        $nombreDb = "tiendavirtual";
         $usuarioDb = "root";
         $passwordDB = "";
         // Create connection
         $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
-        $sql = "SELECT * FROM estudiante WHERE id=".$id;
+        $sql = "SELECT * FROM persona WHERE identificacion=".$identificacion;
         $resultadoQuery= $conn->query($sql);
         if($resultadoQuery->num_rows>0){
             while($row= $resultadoQuery->fetch_assoc()){
@@ -66,32 +66,32 @@ $persona =[
         </div>
         <div>
             <label class="lblDatos" id="lblIden" for="ident"> Identificación </label>
-            <input class="inpDatos" id="ident" name="ident" type="number" value="<?php echo$persona['identificacion'] ?>" placeholder="Ingrese su Identificación" required/>
+            <input class="inpDatos" id="identificacion" name="identificacion" type="number" value="<?php echo$persona['identificacion'] ?>" placeholder="Ingrese su Identificación" required/>
                         
         </div>
         <div>
-            <label class="lblDatos" id="contraseña" for="contr"> contraseña </label>
-            <input class="inpDatos" id="contr" name="contr" type="password" value="<?php echo$persona['contraseña'] ?>" placeholder="Ingrese su contraseña" required />
+            <label class="lblDatos" id="contra" for="contraseña"> contraseña </label>
+            <input class="inpDatos" id="contraseña" name="contraseña" type="password" value="<?php echo$persona['contraseña'] ?>" placeholder="Ingrese su contraseña" required />
         </div>
         <div>
-            <label class="lblDatos" id="contraseña1" for="contr1"> contraseña </label>
-            <input class="inpDatos" id="contr1" name="contr1" type="password" value="<?php echo$persona['contraseña'] ?>" placeholder="Repita su contraseña"  required/>
+            <label class="lblDatos" id="contra1" for="contraseña1"> contraseña </label>
+            <input class="inpDatos" id="contraseña1" name="contraseña1" type="password" value="<?php echo$persona['contraseña'] ?>" placeholder="Repita su contraseña"  required/>
         </div> 
         <div>
         <label class="lblDatos" id="lblUsuario" for="usuario"> Usuario</label>
         <input class="inpDatos" id="usuario" name="usuario" type="text" value="<?php echo$persona['usuario'] ?>" placeholder="Ingrese su usuario" required />
         </div>              
         <div>
-        <label class="lblDatos" id="lblRol" for="selecRol"> Rol del usuario</label>
-        <select class="inpDatos" id="selectRol"  name="selectRol" required value="<?php echo$persona['rol'] ?>">
+        <label class="lblDatos" id="lblRol" for="rol"> Rol del usuario</label>
+        <select class="inpDatos" id="rol"  name="rol" required value="<?php echo$persona['rol'] ?>">
             <option value="PK1" selected>Seleccione  </option>
                 <option value="PK1">Cliente  </option>
                 <option value="PK3"> Administrador </option>
         </select>
         </div>                    
         <div>
-        <label class="inpDatos" id="telefono" for="tel"> Telefono </label>
-        <input  class="inpDatos" id="tel" name="tel" type="tel" value="<?php echo$persona['telefono'] ?>" placeholder="Ingrese su telefono" required />
+        <label class="inpDatos" id="tel" for="telefono"> Telefono </label>
+        <input  class="inpDatos" id="telefono" name="telefono" type="tel" value="<?php echo$persona['telefono'] ?>" placeholder="Ingrese su telefono" required />
         </div>    
             
             <button  id="btnGuardar" class="inpDatos btnCr" type="submit">Guardar</button>

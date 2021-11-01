@@ -1,6 +1,6 @@
 <?php 
 $servidorDB = "localhost:3306";
-$nombreDb = "estudiantes_db";
+$nombreDb = "tiendavirtual";
 $usuarioDb = "root";
 $passwordDB = "";
 
@@ -16,7 +16,7 @@ $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
 <body>
     
     <h1>lista de Estudiantes</h1>
-    <a href="form_estudiantes.php">Registrar nuevo estudiante</a>
+    <a href="creacionUsuario.php">Registrar nuevo estudiante</a>
     <table>
         <thead>
             <tr>
@@ -34,22 +34,22 @@ $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
         </thead>
         <tbody>
         <?php
-            $sql = "select * from estudiante";
+            $sql = "select * from persona";
             $resultadoQuery = $conn->query($sql);
             if ($resultadoQuery->num_rows>0){
                 while($row=$resultadoQuery->fetch_assoc()){
                     echo '<tr>';
                     echo '<td>'.$row['nombre'].''.$row['apellido'].'</td>';
-                    echo '<td>'.$row['edad'].'</td>';
+                    echo '<td>'.$row['identificacion'].'</td>';
+                    echo '<td>'.$row['contraseña'].'</td>';
+                    echo '<td>'.$row['usuario'].'</td>';
+                    echo '<td>'.$row['rol'].'</td>';
+                    echo '<td>'.$row['telefono'].'</td>';
                     echo '<td>';
-                    echo '<tr>';
-                    echo '<td>'.$row['nombre'].''.$row['apellido'].'</td>';
-                    echo '<td>'.$row['edad'].'</td>';
-                    echo '<td>';
-                    echo '<a href="form_estudiantes.php?idE='.$row['id'].' ">Modificar</a>';
+                    echo '<a href="creacionUsuaio.php?idE='.$row['identificacion'].' ">Modificar</a>';
                     echo '</td>';
                     echo '<td>';
-                    echo '<a href="eliminar.php?idE='.$row['id'].'">Eliminar</a>';
+                    echo '<a href="eliminar.php?idE='.$row['identificacion'].'">Eliminar</a>';
                     echo '</td>';
                     echo '</td>';
                 }
