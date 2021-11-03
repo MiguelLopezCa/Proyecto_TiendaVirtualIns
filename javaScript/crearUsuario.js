@@ -4,8 +4,7 @@ function onclickGuardar(){
     var espacios = false;
     var cont = 0;
     if(p1!=p2){
-        alert('Las contraseñas no coinciden')
-        console.error('s');
+        document.getElementById()
     }else{
         if(p1=='' ||p2==''){
             alert('El sistema no permite contraseñas vacias');

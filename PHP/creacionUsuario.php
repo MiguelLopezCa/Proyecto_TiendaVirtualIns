@@ -55,7 +55,8 @@ $persona =[
     }
 
     ?>  
-    <div id="divCont">
+    <form onsubmit="onclickGuardar()">
+        <div id="divCont">
         <div>
             <label class="lblDatos" id="LblNombre" for="nombre"> Nombre</label>
             <input class="inpDatos" id="nombre" name="nombre" type="text" value="<?php echo$persona['nombres'] ?>" placeholder="Ingrese su nombre" required />
@@ -75,7 +76,7 @@ $persona =[
         </div>
         <div>
             <label class="lblDatos" id="contra1" for="contraseña1"> contraseña </label>
-            <input class="inpDatos" id="contraseña1" name="contraseña1" type="password" value="<?php echo$persona['contraseña'] ?>" placeholder="Repita su contraseña"  required/>
+            <input class="inpDatos" id="contraseña1" name="contraseña1" type="password" value="<?php echo$persona['contraseña'] ?>" placeholder="Repita su contraseña" required/>
         </div> 
         <div>
         <label class="lblDatos" id="lblUsuario" for="usuario"> Usuario</label>
@@ -86,7 +87,7 @@ $persona =[
         <select class="inpDatos" id="rol"  name="rol" required value="<?php echo$persona['rol'] ?>">
             <option value="PK1" selected>Seleccione  </option>
                 <option value="PK1">Cliente  </option>
-                <option value="PK3"> Administrador </option>
+                <option value="PK2"> Administrador </option>
         </select>
         </div>                    
         <div>
@@ -94,11 +95,12 @@ $persona =[
         <input  class="inpDatos" id="telefono" name="telefono" type="tel" value="<?php echo$persona['telefono'] ?>" placeholder="Ingrese su telefono" required />
         </div>    
             
-            <button  id="btnGuardar" class="inpDatos btnCr" type="submit">Guardar</button>
+            <button  id="btnGuardar" class="inpDatos btnCr"  type="submit">Guardar</button>
                     <button id="btnCancelar" class="inpDatos btnCr" type="reset">Cancelar</button>
                     <button id="btnRegresar" class="inpDatos btnCr" onclick="window.location.href='../HTML/inicio.html'" type="button">Regresar</button>
                    
-        </form>
+    </form>
 </div>
+<script type="text/javascript" src="../javaScript/crearUsuario.js"></script>
 </body>
 </html>
