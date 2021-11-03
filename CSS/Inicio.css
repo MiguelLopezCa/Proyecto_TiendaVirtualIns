@@ -96,3 +96,21 @@ section {
     border-radius: 5px 5px 5px 5px;
     font-size: 15px;
 }
+
+.login a {
+    position: absolute;
+    top: 18px;
+    left: 1250px;
+    width: 270px;
+    text-decoration: none;
+    color: black;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+.login a:active {
+    text-decoration: underline;
+    color: blueviolet;
+}
