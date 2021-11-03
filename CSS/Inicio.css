@@ -82,4 +82,11 @@ section {
     font-size: 30px;
 }
 
-#buscador {}
+#buscador {
+    position: absolute;
+    top: 29px;
+    left: 780px;
+    width: 270px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 15px;
+}
