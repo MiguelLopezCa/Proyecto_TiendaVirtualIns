@@ -7,7 +7,7 @@
 header {
     position: relative;
     margin: 2% auto;
-    width: 1280px;
+    width: 1300px;
     height: 120px;
     background:chartreuse;
 }
@@ -76,7 +76,7 @@ aside#Der {
 section {
     position: relative;
     margin: 5px auto;
-    width: 1280px;
+    width: 1300px;
     height: 453px;
     background: transparent;
     
@@ -93,7 +93,7 @@ section {
 footer {
     position: relative;
     margin: auto;
-    width: 1280px;
+    width: 1300px;
     height: 70px;
     background:yellowgreen;
 }
