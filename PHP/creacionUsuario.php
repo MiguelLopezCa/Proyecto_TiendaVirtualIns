@@ -17,12 +17,12 @@ $persona =[
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Estudiantes</title>
+    <title>Crear usuario</title>
     <link rel="stylesheet" href="../css/ceracionUsua.css">
 </head>
 <body style=" background-image: url(../resource/fondo1.jpg) ;">
 
-    <h1><?php echo $tituloForm; ?> </h1>
+    <h1 id="titulo"><?php echo $tituloForm; ?> </h1>
     </br>
    
     </br></br>

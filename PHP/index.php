@@ -11,12 +11,12 @@ $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Estudiantes</title>
+    <title> usuarios</title>
 </head>
 <body>
     
     <h1>lista de Estudiantes</h1>
-    <a href="creacionUsuario.php">Registrar nuevo estudiante</a>
+    <a href="creacionUsuario.php">Registrar nuevo usuario</a>
     <table>
         <thead>
             <tr>
