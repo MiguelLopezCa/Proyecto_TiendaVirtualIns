@@ -16,12 +16,12 @@ $filas=mysqli_num_rows($resultado);
 
 if($filas){
   
-    header("location:inicio.html");
+    header("location:../HTML/inicio.html");
 
 }else{
     ?>
     <?php
-    include("login.html");
+    include("../HTML/login.html");
 
   ?>
   <h1 class="bad">ERROR DE AUTENTIFICACION</h1>
