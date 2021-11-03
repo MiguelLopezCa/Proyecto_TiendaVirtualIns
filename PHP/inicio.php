@@ -24,7 +24,7 @@
                     <li><a href="#"><span class="icon-play"></span> Musica y más</a></li>
                     <li><a href="#"><span class="icon-location"></span> Contacto</a></li>
                     <div class="busc"><input type=" text " placeholder="Buscador " id="buscador "></div>
-                    <div class="imagen "><img src="../resource/logo.png " width="150px " height="75px "></div>
+                    <div class="imagenl "><img src="../resource/logo.png " width="150px " height="75px "></div>
                 </ul>
             </nav>
             <div class="login"><a href="../PHP/login.php"><span class="icon-users"></span>Iniciar sesión o registrarse</a></div>
@@ -33,11 +33,21 @@
     </header>
     <section>
         <aside id="Izq">
+            <div class="contenedor">
+            <div class="imagen" >
+        <img src="../resource/gu.jpg"   height= 400px
+    width= 300px>
+    </div></div>
         </aside>
         <article>
-            <h3 id="nombInstru">Instrumento</h3>
+            <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CVHnsH5m_Tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </article>
-        <aside id="Der"></aside>
+        <aside id="Der">
+        <img src="../resource/p.jpg"   height= 900px
+    width= 300px>
+        </aside>
     </section>
 </body>
 

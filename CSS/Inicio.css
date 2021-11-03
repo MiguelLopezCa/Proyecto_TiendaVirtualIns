@@ -82,7 +82,7 @@ section {
     font-size: 30px;
 }
 
-.imagen {
+.imagenl {
     position: absolute;
     top: 0px;
     left: -140px;
@@ -115,4 +115,56 @@ section {
     color: blueviolet;
 }
 
-#id {}
+#Izq {
+    position: absolute;
+    left: 0px;
+    top: 69px;
+    height: 900px;
+    width: 300px;
+    background-color: rgb(243, 219, 167);
+}
+
+#Der {
+    position: absolute;
+    right: 0px;
+    top: 69px;
+    height: 900px;
+    width: 300px;
+    background-color: rgb(243, 219, 167);
+}
+
+article {
+    position: absolute;
+    left: 300px;
+    top: 69px;
+    height: 900px;
+    width: 3000px;
+    background-color: rgba(243, 219, 167, 0.733);
+}
+
+.contenedor:hover .imagen {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.contenedor {
+    overflow: hidden;
+}
+
+.contenedor:hover .imagen {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.contenedor {
+    overflow: hidden;
+}
+
+.imagen {
+    margin-left: 0px;
+}
+
+.video {
+    margin-left: 170px;
+}
