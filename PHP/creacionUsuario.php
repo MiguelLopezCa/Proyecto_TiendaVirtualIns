@@ -9,7 +9,7 @@ $persona =[
     'contraseña'=>'',
     'usuario'=>'',
     'rol'=>'',
-    'telefono',
+    'telefono'=>'',
 ];
 ?>
 
