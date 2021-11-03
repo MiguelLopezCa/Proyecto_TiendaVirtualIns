@@ -32,14 +32,13 @@
         </div>
     </header>
     <section>
-        <aside id="Izq"></aside>
+        <aside id="Izq">
+        </aside>
         <article>
             <h3 id="nombInstru">Instrumento</h3>
         </article>
         <aside id="Der"></aside>
     </section>
-    <script src="http://code.jquery.com/jquery-lastest.js "></script>
-    <script src="../javaScript/inicio.js "></script>
 </body>
 
 </html>
