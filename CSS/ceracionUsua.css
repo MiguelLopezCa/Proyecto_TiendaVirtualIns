@@ -1,6 +1,6 @@
 body{
     background-repeat: no-repeat;
-    width: 1280px;
+    width: 1300px;
     margin: 20px;
 }
 #divCont{
@@ -67,27 +67,27 @@ body{
     left: calc(30% - 100px);
     top: 30%;
 }
-#ident{
+#identificacion{
     position: absolute;
     left: calc(50% - 100px);
     top: 30%;
 }
-#contraseña{
+#contra{
     position: absolute;
     left: calc(30% - 100px);
     top: 40%;
 }
-#contr{
+#contraseña{
     position: absolute;
     left: calc(50% - 100px);
     top: 40%;
 }
-#contraseña1{
+#contra1{
     position: absolute;
     left: calc(30% - 100px);
     top: 50%;
 }
-#contr1{
+#contraseña1{
     position: absolute;
     left: calc(50% - 100px);
     top: 50%;
@@ -107,18 +107,18 @@ body{
     left: calc(30% - 100px);
     top: 70%;
 }
-#selectRol{
+#rol{
     width: 210px;
     position: absolute;
     left: calc( 50% - 100px);
     top: 70%;
 }
-#telefono{
+#tel{
     position: absolute;
     left: calc( 30% - 100px);
     top: 80%;
 }
-#tel{
+#telefono{
     position: absolute;
     left: calc( 50% - 100px);
     top: 80%;
