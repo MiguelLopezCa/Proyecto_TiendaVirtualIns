@@ -82,4 +82,17 @@ section {
     font-size: 30px;
 }
 
-#buscador {}
+.imagen {
+    position: absolute;
+    top: 0px;
+    left: -140px;
+}
+
+.busc input {
+    position: absolute;
+    top: 29px;
+    left: 780px;
+    width: 270px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 15px;
+}
