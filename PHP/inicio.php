@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Inicio</title>
-    <link rel="stylesheet" href="../css/Inicio.css">
+    <link rel="stylesheet" href="../CSS/Inicio.css">
     <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../style.css">
 
@@ -16,7 +16,6 @@
     <header>
         <div class="menu">
             <a href="#" class="bt-menu"></a>
-            <!-- <span class="icon-list2"></span> -->
 
             <nav>
                 <ul>
