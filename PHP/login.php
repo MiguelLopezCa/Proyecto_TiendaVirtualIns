@@ -12,7 +12,7 @@
             <input id="usuario" name="usuario" type="text"  class="inpDatos"  placeholder="Ingrese su Usuario" required >
             <input type="password"  class="inpDatos" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" required >
             <input id="btnIngresar" class="inpDatos cre" type="submit" value="Ingresar">
-            <button id="btnRegistrar" class="inpDatos cre " onclick="window.location.href='creacionUs.html'" type="submit">REGISTRARSE</button>
+            <button id="btnRegistrar" class="inpDatos cre " onclick="window.location.href='../PHP/creacionUsuario.php'" type="submit">REGISTRARSE</button>
         </form>
     </div>
 </body>
