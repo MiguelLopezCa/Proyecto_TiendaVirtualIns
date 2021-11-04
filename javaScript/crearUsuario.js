@@ -8,8 +8,6 @@ function onclickGuardar(){
     }else{
         if(p1=='' ||p2==''){
             alert('El sistema no permite contraseñas vacias');
-
-        }
         if(p1==' ' &&p2==' '){
             alert('Asigne una contraseña sin espacios');
         }else{
@@ -20,4 +18,6 @@ function onclickGuardar(){
 }
 function identificacion(){
     var identificacion = parseInt(document.getElementById("ident").value);
+}
+
 }
