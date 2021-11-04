@@ -183,9 +183,60 @@ background-color: white;
 position: absolute;
 font-size: 60px;
 width: 200px;
-top: -10%;
+top: -13%;
 left: calc(50% - 100px);
 }
+.gridClass{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-template-areas:
+        "divRojo divAmarillo divAzul"
+        "divVerde divNegro divAmarilloVerde";
+    grid-row-gap: 22px;
+    grid-column-gap: 20px;
+    grid-gap: 20px;
+}
+.hijoClass{
+    width:200px;
+    height:200px;
+}
+.colorRed{
+    background-color: yellowgreen;
+    grid-area:divRojo;
+}
+.colorBlue {
+    background-color: yellowgreen;
+    grid-area: divAzul;
+}
+.colorGreen {
+    background-color: yellowgreen;
+    grid-area: divVerde;
+}
+.colorYellow {
+    background-color: yellowgreen;
+    grid-area: divAmarillo;
+}
+.colorBlack {
+    background-color: yellowgreen;
+    grid-area: divNegro;
+}
+.colorYellowGreen {
+    background-color: yellowgreen;
+    grid-area: divAmarilloVerde;
+}
+}
+    @media (max-width:600px) {
+        .gridClass {
+            grid-template-areas:
+                "divRojo"
+                "divAmarillo"
+                "divAzul"
+                "divVerde"
+                "divNegro"
+                "divAmarilloVerde";
+        }
+    }
 footer{
     position: relative;
 }

@@ -2,17 +2,16 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../CSS/Inicio.css">
+    <meta charset="UTF-8" />
+    <title>Instrumentos de cuerda</title>
+    <link rel="stylesheet" href="../CSS/instrumentos.css">
     <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-
 </head>
 
 <body>
-    <header>
+<header>
         <div class="menu">
             <a href="#" class="bt-menu"></a>
 
@@ -31,24 +30,5 @@
 
         </div>
     </header>
-    <section>
-        <aside id="Izq">
-            <div class="contenedor">
-            <div class="imagen" >
-        <img src="../resource/gu.jpg"   height= 400px
-    width= 300px>
-    </div></div>
-        </aside>
-        <article>
-            <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CVHnsH5m_Tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </article>
-        <aside id="Der">
-        <img src="../resource/p.jpg"   height= 900px
-    width= 300px>
-        </aside>
-    </section>
 </body>
-
 </html>
