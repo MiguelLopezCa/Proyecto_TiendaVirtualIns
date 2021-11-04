@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <header>
-    <div class="menu">
+<header>
+        <div class="menu">
             <a href="#" class="bt-menu"></a>
 
             <nav>
@@ -24,13 +24,12 @@
                     <li><a href="#"><span class="icon-play"></span> Musica y más</a></li>
                     <li><a href="#"><span class="icon-location"></span> Contacto</a></li>
                     <div class="busc"><input type=" text " placeholder="Buscador " id="buscador "></div>
-                    <div class="imagen "><img src="../resource/logo.png " width="150px " height="75px "></div>
+                    <div class="imagenl "><img src="../resource/logo.png " width="150px " height="75px "></div>
                 </ul>
             </nav>
             <div class="login"><a href="../PHP/login.php"><span class="icon-users"></span>Iniciar sesión o registrarse</a></div>
 
         </div>
-        
     </header>
 </br>
 </br>
