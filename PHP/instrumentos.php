@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Formulario de prueba</title>
+    <title>Instrumentos</title>
     <link rel="stylesheet" href="../CSS/instrumentos.css">
-    <link rel="stylesheet" href="../CSS/Inicio.css">
     <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
@@ -34,14 +33,17 @@
 </br>
 </br>
     <section>
-        <table style="border: 1 black;" >
-            <tr>
-                <td>
-                     
-                    <h1>Precio</h1>
-                </td>
-            </tr>
-        </table>
+        <aside id="izq"> 
+        <button class="tiposInst" >Instrumentos de viento</button>
+        <br>
+        <button class="tiposInst">Instrumentos de percusión</button>
+        <br>
+        <button class="tiposInst">Instrumentos de cuerda</button>
+        <br>
+        </aside>
+        <aside id="articulos">
+            <h1 id="titulo"> Instrumentos</h1>
+        </article>
     </section>
     <footer>
         &copy; 2021 Derechos reservados
