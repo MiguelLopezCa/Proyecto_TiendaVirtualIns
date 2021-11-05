@@ -35,7 +35,7 @@ $conn->close();
     if($resultadoQuery){
         echo '<p>Registro exitoso</P>';
         echo '<br>'; 
-        echo '<a href= "index.php">Volver a la lista</a>';
+        echo '<a href= "login.php">Ingresar</a>';
     
     }else{
         echo '<p>presentó un error al guardar los datos. Vuelva a intentar</P>';

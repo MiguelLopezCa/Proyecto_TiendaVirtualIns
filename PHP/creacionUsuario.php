@@ -28,7 +28,7 @@ $persona =[
     </br></br>
     <form action="<?php echo $actionForm;?>" method="POST">
     <?php
-    if (!empty($id)){
+    if (!empty($identificacion)){
         $servidorDB = "localhost:3306";
         $nombreDb = "tiendavirtual";
         $usuarioDb = "root";
@@ -51,11 +51,11 @@ $persona =[
         }
 
         $conn->close();
-        echo '<input id= "idInput" name="idInput" type="hidden" value="'.$id.'">';
+        echo '<input id= "idInput" name="idInput" type="hidden" value="'.$identificacion.'">';
     }
 
     ?>  
-    <form onsubmit="onclickGuardar()">
+    <form >
         <div id="divCont">
         <div>
             <label class="lblDatos" id="LblNombre" for="nombre"> Nombre</label>
@@ -85,9 +85,9 @@ $persona =[
         <div>
         <label class="lblDatos" id="lblRol" for="rol"> Rol del usuario</label>
         <select class="inpDatos" id="rol"  name="rol" required value="<?php echo$persona['rol'] ?>">
-            <option value="PK1" selected>Seleccione  </option>
-                <option value="PK1">Cliente  </option>
-                <option value="PK2"> Administrador </option>
+                 <option value="seleccione" selected>Seleccione  </option>
+                <option value="cliente">Cliente  </option>
+                <option value="administrador"> Administrador </option>
         </select>
         </div>                    
         <div>
@@ -95,9 +95,9 @@ $persona =[
         <input  class="inpDatos" id="telefono" name="telefono" type="tel" value="<?php echo$persona['telefono'] ?>" placeholder="Ingrese su telefono" required />
         </div>    
             
-            <button  id="btnGuardar" class="inpDatos btnCr"  type="submit">Guardar</button>
+            <button  id="btnGuardar" class="inpDatos btnCr"  type="submit" >Guardar</button>
                     <button id="btnCancelar" class="inpDatos btnCr" type="reset">Cancelar</button>
-                    <button id="btnRegresar" class="inpDatos btnCr" onclick="window.location.href='../PHP/inicio.php'" type="button">Regresar</button>
+                    <button id="btnRegresar" class="inpDatos btnCr" onclick="window.location.href='../PHP/login.php'" type="button">Regresar</button>
                    
     </form>
 </div>
