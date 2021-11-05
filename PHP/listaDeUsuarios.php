@@ -6,12 +6,15 @@ $passwordDB = "";
 
 // Create connection
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
+include '../HTML/menu.html';
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title> usuarios</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../CSS/lista.css">
 
 </head>
@@ -19,11 +22,17 @@ $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
     
     <h1>LISTA DE USUARIOS</h1>
     <button class="regis"><a href="creacionUsuario.php">Registrar nuevo usuario</a></button>
+=======
+    
+</head>
+<body>
+    <h1>lista de usuarios</h1>
+    <a href="creacionUsuario.php">Registrar nuevo usuario</a>
+>>>>>>> 0ca568d5edb61efa0a8bee1645b2ab40590afa39
     <table>
         <thead>
             <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
+                <th>Nombre Apellido</th>
                 <th>Identificación</th>
                 <th>Contraseña</th>
                 <th>Usuario</th>
