@@ -41,7 +41,11 @@
         </aside>
         <article>
             <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CVHnsH5m_Tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+
+<video width="500" height="300" controls autoplay>
+  	<source src="../resource/l1.mp4" type="video/mp4">
+</video>
             </div>
         </article>
         <aside id="Der">
