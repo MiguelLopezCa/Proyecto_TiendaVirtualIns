@@ -19,7 +19,7 @@
             <nav>
                 <ul>
                     <li><a href="#"><span class="icon-home"></span> Inicio</a></li>
-                    <li><a href="../PHP/quienes.php"><span class="icon-mic"></span> ¿Quienes somos?</a></li>
+                    <li><a href="#"><span class="icon-mic"></span> ¿Quienes somos?</a></li>
                     <li><a href="#"><span class="icon-music"></span> Instrumentos</a></li>
                     <li><a href="#"><span class="icon-play"></span> Musica y más</a></li>
                     <li><a href="#"><span class="icon-location"></span> Contacto</a></li>
@@ -31,24 +31,5 @@
 
         </div>
     </header>
-    <section>
-        <aside id="Izq">
-            <div class="contenedor">
-            <div class="imagen" >
-        <img src="../resource/gu.jpg"   height= 400px
-    width= 300px>
-    </div></div>
-        </aside>
-        <article>
-            <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CVHnsH5m_Tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </article>
-        <aside id="Der">
-        <img src="../resource/p.jpg"   height= 900px
-    width= 300px>
-        </aside>
-    </section>
 </body>
-
 </html>
