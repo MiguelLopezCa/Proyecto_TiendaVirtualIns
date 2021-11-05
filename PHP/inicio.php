@@ -35,9 +35,10 @@
         <aside id="Izq">
             <div class="contenedor">
             <div class="imagen" >
-        <img src="../resource/gu.jpg"   height= 400px width= 300px>
-        <img src="../resource/v.jpg"   height= 400px width= 300px>
+        <img src="../resource/gu.jpg"   height= 330px width= 300px>
+        
     </div></div>
+    <img src="../resource/v.jpg"   height= 330px width= 300px>
         </aside>
         <article>
             <div class="video">
