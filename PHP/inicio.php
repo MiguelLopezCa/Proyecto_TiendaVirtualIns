@@ -18,10 +18,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="#"><span class="icon-home"></span> Inicio</a></li>
+                    <li><a href="../PHP/inicio.php"><span class="icon-home"></span> Inicio</a></li>
                     <li><a href="../PHP/quienes.php"><span class="icon-mic"></span> ¿Quienes somos?</a></li>
-                    <li><a href="#"><span class="icon-music"></span> Instrumentos</a></li>
-                    <li><a href="#"><span class="icon-play"></span> Musica y más</a></li>
+                    <li><a href="../PHP/instrumentos.php"><span class="icon-music"></span> Instrumentos</a></li>
+                    <li><a href="../PHP/musica.php"><span class="icon-play"></span> Musica y más</a></li>
                     <li><a href="#"><span class="icon-location"></span> Contacto</a></li>
                     <div class="busc"><input type=" text " placeholder="Buscador " id="buscador "></div>
                     <div class="imagenl "><img src="../resource/logo.png " width="150px " height="75px "></div>
