@@ -13,8 +13,7 @@ include '../HTML/menu.html';
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title> usuarios</title>
-
+    <title> Usuarios</title>
     <link rel="stylesheet" href="../CSS/lista.css">
 
 </head>
