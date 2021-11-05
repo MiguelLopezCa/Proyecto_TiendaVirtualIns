@@ -55,19 +55,11 @@ section {
     }
 }
 
-
-/* header nav ul li {
-    display: block;
-    float: none;
-    border-bottom: 1px solid;
-} */
-
 .menu {
     display: block;
     width: 100%;
     background: rgb(243, 219, 167);
 }
-
 .menu .bt-menu {
     display: block;
     padding: 34.5px;
@@ -225,7 +217,7 @@ left: calc(50% - 100px);
     background-color: yellowgreen;
     grid-area: divAmarilloVerde;
 }
-}
+
     @media (max-width:600px) {
         .gridClass {
             grid-template-areas:
