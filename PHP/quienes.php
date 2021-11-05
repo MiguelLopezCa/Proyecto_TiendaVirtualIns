@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Inicio</title>
+    <title>¿Quienes somos?</title>
     <link rel="stylesheet" href="../CSS/Inicio.css">
     <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../style.css">
