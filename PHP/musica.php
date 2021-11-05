@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Instrumentos de cuerda</title>
+    <title>Música y más</title>
     <link rel="stylesheet" href="../CSS/musica.css">
     <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../style.css">
@@ -18,9 +18,9 @@
             <nav>
                 <ul>
                 <li><a href="../PHP/inicio.php"><span class="icon-home"></span> Inicio</a></li>
-                    <li><a href="../PHP/quienesSomos.php"><span class="icon-mic"></span> ¿Quienes somos?</a></li>
+                    <li><a href="../PHP/quienes.php"><span class="icon-mic"></span> ¿Quienes somos?</a></li>
                     <li><a href="../PHP/instrumentosViento.php"><span class="icon-music"></span> Instrumentos</a></li>
-                    <li><a href="../PHP/musicaYmas.php"><span class="icon-play"></span> Musica y más</a></li>
+                    <li><a href="../PHP/musica.php"><span class="icon-play"></span> Musica y más</a></li>
                     <li><a href="../PHP/contacto.php"><span class="icon-location"></span> Contacto</a></li>
                     <div class="busc"><input type=" text " placeholder="Buscador " id="buscador "></div>
                     <div class="imagenl "><img src="../resource/logo.png " width="150px " height="75px "></div>
