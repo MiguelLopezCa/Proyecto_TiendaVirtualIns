@@ -7,7 +7,7 @@
     position: absolute;
     left: 0px;
     top: 69px;
-    height: 903px;
+    height: 2000px;
     width: 300px;
     background-color: rgb(243, 219, 167);
 }
@@ -16,7 +16,7 @@
     position: absolute;
     right: 0px;
     top: 69px;
-    height: 903px;
+    height: 2000px;
     width: 300px;
     background-color: rgb(243, 219, 167);
 }
@@ -25,7 +25,7 @@ article {
     position: absolute;
     left: 300px;
     top: 69px;
-    height: 1600px;
+    height: 2000px;
     width: 1000px;
     background-color: rgba(243, 219, 167, 0.733);
 }
