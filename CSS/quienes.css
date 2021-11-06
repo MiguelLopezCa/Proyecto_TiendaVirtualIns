@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     width: 100%;
     /*abarca el 100%*/
