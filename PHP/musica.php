@@ -1,11 +1,12 @@
 <?php 
-include '../HTML/menu.html';
+include '../HTML/menu.html'; 
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
-    <title>Música y más</title>
+    <title>Música y más</title>  
     <link rel="stylesheet" href="../CSS/contacto.css">  
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
 </head>
@@ -13,7 +14,7 @@ include '../HTML/menu.html';
 <body>
     <section>
         <aside id="Izq">
-            <!-- <div class="contenedor">
+            <div class="contenedor">
             <div class="imagen" >
         <img src="../resource/gu.jpg"   height= 330px width= 300px>
         
@@ -21,7 +22,7 @@ include '../HTML/menu.html';
     <div class="contenedor">
             <div class="imagen" >
     <img src="../resource/v.jpg"   height= 346px width= 300px>
-    </div></div> -->
+    </div></div>
         </aside>
         <article>
             <!-- <div class="video">
@@ -33,8 +34,8 @@ include '../HTML/menu.html';
             </div> -->
         </article>
         <aside id="Der">
-            <!-- <img src="../resource/p.jpg"   height= 683px
-    width= 300px> -->
+            <img src="../resource/p.jpg"   height= 683px
+    width= 300px>
         </aside>
     </section>
 </body>
