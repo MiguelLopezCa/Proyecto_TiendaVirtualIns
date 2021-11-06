@@ -25,13 +25,13 @@ include '../HTML/menu.html';
     </div></div>
         </aside>
         <article>
-            <!-- <div class="video">
-      
-
-<video width="500" height="300" controls autoplay>
-  	<source src="../resource/l1.mp4" type="video/mp4">
-</video>
-            </div> -->
+       <table>
+           <tr>
+               <td><iframe width="435" height="230" src="https://www.youtube.com/embed/m9PJ1HyXkjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+               <td><iframe width="435" height="230" src="https://www.youtube.com/embed/bZ_BoOlAXyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+               <td></td>
+           </tr>
+       </table>
         </article>
         <aside id="Der">
             <img src="../resource/p.jpg"   height= 683px

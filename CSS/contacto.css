@@ -57,6 +57,7 @@ article {
     margin-left: 170px;
 }
 
-.form {
-    margin-left: -20px;
+.form iframe {
+    margin-left: -50px;
+    border: none;
 }

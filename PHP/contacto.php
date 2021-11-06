@@ -47,7 +47,7 @@ include '../HTML/menu.html';
 <br>
 <br>
 <br>
-<div class="form"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRUB4L_4nnA1iBT8cAbLgSEJ3N2c1MmWKX26qZtvRou2r9bQ/viewform?embedded=true" width="1000" height="1700" frameborder="6O">Cargando...</iframe>
+<div class="form"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRUB4L_4nnA1iBT8cAbLgSEJ3N2c1MmWKX26qZtvRou2r9bQ/viewform?embedded=true" width="1000" height="1700"></iframe>
     </div>
     <BR>
 <BR>
