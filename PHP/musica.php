@@ -27,10 +27,21 @@ include '../HTML/menu.html';
         <article>
        <table>
            <tr>
-               <td><iframe width="435" height="230" src="https://www.youtube.com/embed/m9PJ1HyXkjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-               <td><iframe width="435" height="230" src="https://www.youtube.com/embed/bZ_BoOlAXyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-               <td></td>
+               <td><iframe width="438" height="230" src="https://www.youtube.com/embed/m9PJ1HyXkjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+               <td><iframe width="438" height="230" src="https://www.youtube.com/embed/bZ_BoOlAXyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+               
            </tr>
+           <tr>
+               <td><iframe  width="438" height="230" src="https://www.youtube.com/embed/Iq-YwZI6Mb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+               <td><iframe  width="438" height="230" src="https://www.youtube.com/embed/okIQYRE_t3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+               
+           </tr>
+           <tr>
+               <td><iframe width="438" height="210" src="https://www.youtube.com/embed/ZALP7Di4HaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+               <td><iframe width="438" height="210" src="https://www.youtube.com/embed/LRP8d7hhpoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+               
+           </tr>
+        
        </table>
         </article>
         <aside id="Der">
