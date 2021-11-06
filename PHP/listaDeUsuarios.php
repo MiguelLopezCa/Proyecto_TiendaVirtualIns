@@ -13,21 +13,13 @@ include '../HTML/menu.html';
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-<<<<<<< Updated upstream
     <title> Usuarios</title>
-=======
-    <title> usuarios</title>
->>>>>>> Stashed changes
     <link rel="stylesheet" href="../CSS/lista.css">
 
 </head>
 <body>
     <h1>LISTA DE USUARIOS</h1>
     <button class="regis"><a href="creacionUsuario.php">Registrar nuevo usuario</a></button>
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     <table>
         <thead>
             <tr>
