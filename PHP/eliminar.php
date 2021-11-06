@@ -9,7 +9,7 @@ $passwordDB = "";
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
 
 $sql="delete from persona ";
-$sql .= " where identificacion=" . $identificacion;
+$sql .= " where 'identificacion' =". $identificacion;
 
 $resultadoQuery= $conn->query($sql);
 
@@ -31,7 +31,7 @@ $conn->close();
         echo '<p>presentó un error al guardar los datos. Vuelva a intentar</P>';
     }
     echo '<br>'; 
-    echo '<a href= "index.php">Volver a la lista</a>';
+    echo '<a href= "listaDeUsuarios.php">Volver a la lista</a>';
     ?>
 </body>
 </html>

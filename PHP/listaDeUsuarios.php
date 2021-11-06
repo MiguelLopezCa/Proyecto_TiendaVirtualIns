@@ -13,14 +13,21 @@ include '../HTML/menu.html';
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+<<<<<<< Updated upstream
     <title> Usuarios</title>
+=======
+    <title> usuarios</title>
+>>>>>>> Stashed changes
     <link rel="stylesheet" href="../CSS/lista.css">
 
 </head>
 <body>
     <h1>LISTA DE USUARIOS</h1>
     <button class="regis"><a href="creacionUsuario.php">Registrar nuevo usuario</a></button>
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     <table>
         <thead>
             <tr>
@@ -30,7 +37,6 @@ include '../HTML/menu.html';
                 <th>Usuario</th>
                 <th>Rol</th>
                 <th>Telefono</th>
-                <th>Modificar</th>
                 <th>Eliminar</th>
                 
             </tr>
@@ -42,15 +48,12 @@ include '../HTML/menu.html';
             if ($resultadoQuery->num_rows>0){
                 while($row=$resultadoQuery->fetch_assoc()){
                     echo '<tr>';
-                    echo '<td>'.$row['nombre'].''.$row['apellido'].'</td>';
+                    echo '<td>'.$row['nombre'].' '.$row['apellido'].'</td>';
                     echo '<td>'.$row['identificacion'].'</td>';
                     echo '<td>'.$row['contraseña'].'</td>';
                     echo '<td>'.$row['usuario'].'</td>';
                     echo '<td>'.$row['rol'].'</td>';
                     echo '<td>'.$row['telefono'].'</td>';
-                    echo '<td>';
-                    echo '<a href="creacionUsuaio.php?idE='.$row['identificacion'].' ">Modificar</a>';
-                    echo '</td>';
                     echo '<td>';
                     echo '<a href="eliminar.php?idE='.$row['identificacion'].'">Eliminar</a>';
                     echo '</td>';

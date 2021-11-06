@@ -92,7 +92,7 @@ $persona =[
         </div>                    
         <div>
         <label class="inpDatos" id="tel" for="telefono"> Telefono </label>
-        <input  class="inpDatos" id="telefono" name="telefono" type="tel" value="<?php echo$persona['telefono'] ?>" placeholder="Ingrese su telefono" required />
+        <input  class="inpDatos" id="telefono" name="telefono" type="number" value="<?php echo$persona['telefono'] ?>" placeholder="Ingrese su telefono" required />
         </div>    
             
             <button  id="btnGuardar" class="inpDatos btnCr"  type="submit" >Guardar</button>

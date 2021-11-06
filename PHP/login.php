@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <title>Formulario de prueba</title>
+    <title>Ingresar al sistema</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
