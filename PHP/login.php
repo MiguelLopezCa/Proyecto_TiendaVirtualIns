@@ -5,7 +5,7 @@
     <title>Ingresar al sistema</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
-<body style=" background-image: url(../resource/fondo2.jpg) ;">>
+<body >
     <div id="conten">
         <form action="validar.php" method="post">
             <h1 id="titulo">Iniciar sesión</h1>
