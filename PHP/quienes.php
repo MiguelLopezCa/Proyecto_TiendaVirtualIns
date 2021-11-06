@@ -35,12 +35,18 @@ include '../HTML/menu.html';
             <table>
                 <tr>
                 <th>Misión</th>
-                <th>Visión</th>
                 </tr>
                 <tr>
                 <td>Music Boom ofrece a su amplia gama de clientes una forma práctica y sencilla de información de distintos instrumentos musicales, además que cuenta con una asesoria virtual de utilidad de los mismos.</td>
+                </tr>
+                <tr>
+                <th>Visión</th>
+                </tr>
+                <tr>
                 <td>Music Boom aspirará en el 2022 a convertirse en la tienda musical virtual boyacense más querida y aceptada por su invaluable desempeño en la venta de instrumentos y por ofrecer oportunidades de empleo y enseñanza.</td>
                 </tr>
+                
+
             </table>
         </article>
         <aside id="Der">

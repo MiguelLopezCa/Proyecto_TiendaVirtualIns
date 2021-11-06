@@ -173,11 +173,19 @@
                 
                 table {
                     border-radius: 5px 5px 5px 5px;
-                    margin-top: 200px;
+                    margin-top: 100px;
+                    margin-left: 240px;
+                }
+                
+                article {
+                    background-image: url("https://w.wallpaperkiss.com/wimg/s/120-1203452_small.jpg");
+                    background-size: 65rem;
                 }
                 
                 article table tr th {
                     border: solid 2px black;
+                    background-color: white;
+                    color: black;
                 }
                 
                 article table tr td {
