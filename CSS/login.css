@@ -4,7 +4,8 @@ body {
 }
 
 #conten {
-    opacity: 70%;
+    background-color:white;
+    opacity:70%;
     position: fixed;
     color: blue;
     width: 300px;
