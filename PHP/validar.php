@@ -10,7 +10,7 @@ $_SESSION['usuario']=$usuario;
 
 $conexion=mysqli_connect("localhost","root","","tiendavirtual");
 
-$consulta="SELECT*FROM persona where usuario='$usuario' and contraseña='$contraseña'" and rol='$rol';
+$consulta="SELECT*FROM persona where usuario='$usuario' and contraseña='$contraseña'";
 $resultado=mysqli_query($conexion, $consulta);
 
 $filas=mysqli_num_rows($resultado);
