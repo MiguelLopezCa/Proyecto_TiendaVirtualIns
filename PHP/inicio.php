@@ -30,7 +30,7 @@ include '../HTML/menu.html';
       
 
 <video width="500" height="300" controls autoplay>
-  	<source src="../resource/l1.mp4" type="video/mp4">
+  	<source src="../resource/l2.mp4" type="video/mp4">
 </video>
             </div>
         </article>

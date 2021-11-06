@@ -28,6 +28,8 @@ article {
     height: 683px;
     width: 1000px;
     background-color: rgba(243, 219, 167, 0.733);
+    background-image: url("https://w.wallpaperkiss.com/wimg/s/120-1203452_small.jpg");
+    background-size: 65rem;
 }
 
 .contenedor:hover .imagen {
@@ -55,4 +57,5 @@ article {
 
 .video {
     margin-left: 170px;
+    margin-top: 150px;
 }
