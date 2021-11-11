@@ -1,6 +1,4 @@
-<?php 
-include '../HTML/menu.html';
-?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,11 +7,19 @@ include '../HTML/menu.html';
     <title>Instrumentos de Viento</title>
     <link rel="stylesheet" href="../CSS/instrumentos.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="shortcut icon" href="../resource/logo.jpg">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+
 </head>
 
 <body>
-</br>
-</br>
+<?php 
+include '../HTML/menu.html';
+?>
     <section>
         <aside id="izq"> 
         <button class="tiposInst" onclick="window.location.href='../PHP/instrumentosViento.php'">Instrumentos de viento</button>

@@ -9,9 +9,19 @@ include '../HTML/menu.html';
     <title>Música y más</title>  
     <link rel="stylesheet" href="../CSS/musica.css">  
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="shortcut icon" href="../resource/logo.jpg">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+
 </head>
 
 <body>
+<?php 
+include '../HTML/menu.html';
+?>
     <section>
         <aside id="Izq">
             <div class="contenedor">
