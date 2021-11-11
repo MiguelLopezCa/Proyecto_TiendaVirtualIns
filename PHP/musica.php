@@ -1,6 +1,4 @@
-<?php 
-include '../HTML/menu.html'; 
-?>
+
 <!DOCTYPE html>
 <html lang="es">
 
