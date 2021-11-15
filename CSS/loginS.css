@@ -44,9 +44,15 @@ body {
 }
 
 #contraseña {
-    top: 40%;
+    top: 35%;
 }
-
+#rol{
+    position: absolute;
+    width: 210px;
+    height: 25px;
+    top: 50%;
+    left: calc (50% - 50px);
+}
 #btnIngresar {
     top: 60%;
 }

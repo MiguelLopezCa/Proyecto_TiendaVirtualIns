@@ -1,4 +1,14 @@
-
+<style> 
+#msgError{
+  position:absolute;
+  width:180px;
+  height:30px;
+  left:calc( 52% - 90px);
+  color:red;
+  font-size: 10px;
+  top: 60%;
+}
+</style>
 <?php
 include('db.php');
 $usuario=$_POST['usuario'];
@@ -10,17 +20,17 @@ $_SESSION['usuario']=$usuario;
 
 $conexion=mysqli_connect("localhost","root","","tiendavirtual");
 
-$consulta="SELECT*FROM persona where usuario='$usuario' and contraseña='$contraseña'";
+$consulta="SELECT*FROM persona where usuario='$usuario' and contraseña='$contraseña' and rol='$rol'";
 $resultado=mysqli_query($conexion, $consulta);
 
 $filas=mysqli_num_rows($resultado);
 
 if($filas){
-    //if ($rol=='cliente'){
+    if ($rol==="Cliente"){
       header("location:../PHP/inicio.php");
-    //}else{
-     // header("location:../PHP/listaDeUsuarios.php");
-    //}
+    }else{
+     header("location:../PHP/listaDeUsuarios.php");
+    }
 
 }else{
     ?>
@@ -28,8 +38,9 @@ if($filas){
     <?php
       include("../PHP/login.php");
   ?>
-  <h1 class="bad">ERROR DE AUTENTIFICACION</h1>
+  <h1 id="msgError" class="bad">ERROR DE AUTENTIFICACION</h1>
   <?php
+  
 }
 mysqli_free_result($resultado);
 mysqli_close($conexion);
