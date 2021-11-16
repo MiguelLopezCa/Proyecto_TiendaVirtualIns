@@ -1,27 +1,3 @@
-
-<?php 
-$persona =[
-    'nombres'=>$_POST['nombre'],
-    'apellidos'=>$_POST['apellido'],
-    'identificacion'=>$_POST['identificacion'],
-    'contraseña'=>$_POST['contraseña'],
-    'usuario'=>$_POST['usuario'],
-    'rol'=>$_POST['rol'],
-    'telefono'=>$_POST['telefono'],
-];
-$servidorDB = "localhost:3306";
-$nombreDb = "tiendavirtual";
-$usuarioDb = "root";
-$passwordDB = "";
-
-// Create connection
-$conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
-$sql="insert into persona (nombre , apellido , identificacion , contraseña , usuario , rol , telefono )";
-$sql.="values('".$persona['nombres'] ."','".$persona['apellidos'] ."','".$persona['identificacion'] ."','".$persona['contraseña'] ."','".$persona['usuario'] ."','".$persona['rol'] ."',".$persona['telefono'] .")";
-$resultadoQuery= $conn->query($sql);
-
-$conn->close();
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -68,6 +44,30 @@ $conn->close();
         opacity: 70%;
     }
     </style>
+    <script type="javaScript"
+    <?php 
+$persona =[
+    'nombres'=>$_POST['nombre'],
+    'apellidos'=>$_POST['apellido'],
+    'identificacion'=>$_POST['identificacion'],
+    'contraseña'=>$_POST['contraseña'],
+    'usuario'=>$_POST['usuario'],
+    'rol'=>$_POST['rol'],
+    'telefono'=>$_POST['telefono'],
+];
+$servidorDB = "localhost:3306";
+$nombreDb = "tiendavirtual";
+$usuarioDb = "root";
+$passwordDB = "";
+
+// Create connection
+$conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
+$sql="insert into persona (nombre , apellido , identificacion , contraseña , usuario , rol , telefono )";
+$sql.="values('".$persona['nombres'] ."','".$persona['apellidos'] ."','".$persona['identificacion'] ."','".$persona['contraseña'] ."','".$persona['usuario'] ."','".$persona['rol'] ."',".$persona['telefono'] .")";
+$resultadoQuery= $conn->query($sql);
+
+$conn->close();
+?>
 </head>
 <body>
     <?php 
