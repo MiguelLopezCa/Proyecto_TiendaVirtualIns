@@ -16,6 +16,7 @@ header nav {
     position: absolute;
     left: 130px;
     top: -23px;
+    height:70px;
 }
 
 header nav ul {
