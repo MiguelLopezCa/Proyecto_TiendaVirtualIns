@@ -9,7 +9,7 @@ $passwordDB = "";
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
 
 $sql="delete from persona ";
-$sql .= " where 'identificacion' =". $identificacion;
+$sql .= " where 'identificacion' =".$identificacion;
 
 $resultadoQuery= $conn->query($sql);
 

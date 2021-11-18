@@ -6,7 +6,7 @@ $passwordDB = "";
 
 // Create connection
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
-include '../HTML/menu.html';
+
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,15 @@ include '../HTML/menu.html';
     <meta charset="UTF-8">
     <title> Usuarios</title>
     <link rel="stylesheet" href="../CSS/lista.css">
-
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="shortcut icon" href="../resource/logo.jpg">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+<?php 
+include '../HTML/menu.html';
+?>
 </head>
 <body>
     <h1>LISTA DE USUARIOS</h1>
@@ -47,7 +55,7 @@ include '../HTML/menu.html';
                     echo '<td>'.$row['rol'].'</td>';
                     echo '<td>'.$row['telefono'].'</td>';
                     echo '<td>';
-                    echo '<a href="eliminar.php?idE='.$row['identificacion'].'">Eliminar</a>';
+                    echo '<a href="eliminar.php?identificacion='.$row['identificacion'].'">Eliminar</a>';
                     echo '</td>';
                     echo '</td>';
                 }
@@ -65,5 +73,4 @@ include '../HTML/menu.html';
 </html>
 <?php 
 $conn->close();
-//holaaaaaaaaaasi
 ?>

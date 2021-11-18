@@ -95,12 +95,13 @@ $persona =[
         <input  class="inpDatos" id="telefono" name="telefono" type="number" value="<?php echo$persona['telefono'] ?>" placeholder="Ingrese su telefono" required />
         </div>    
             
-            <button  id="btnGuardar" class="inpDatos btnCr"  type="submit" >Guardar</button>
+            <button  id="btnGuardar" class="inpDatos btnCr"  type="submit" onclick="onclickGuardar()" >Guardar</button>
                     <button id="btnCancelar" class="inpDatos btnCr" type="reset">Cancelar</button>
                     <button id="btnRegresar" class="inpDatos btnCr" onclick="window.location.href='../PHP/login.php'" type="button">Regresar</button>
                    
     </form>
+   
 </div>
 <script type="text/javascript" src="../javaScript/crearUsuario.js"></script>
 </body>
-</html>
+ </html>
