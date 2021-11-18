@@ -84,10 +84,11 @@ section {
 }
 
 .busc input {
-    position: absolute;
+    /* position: absolute; */
     top: 29px;
-    left: 75%;
-    padding: 0 20px;
+    width: 0px;
+    height: 40px;
+    color: black;
     border-radius: 5px 5px 5px 5px;
     outline: none;
     font-size: 15px;
