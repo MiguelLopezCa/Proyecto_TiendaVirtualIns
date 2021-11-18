@@ -92,6 +92,25 @@ section {
     font-size: 15px;
 }
 
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.busc:hover input {
+    width: 240px;
+}
+
 .login a {
     position: absolute;
     top: 18px;
