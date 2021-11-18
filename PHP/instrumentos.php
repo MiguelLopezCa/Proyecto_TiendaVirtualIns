@@ -31,7 +31,7 @@
 
     <?php
 
-    include_once "../HTML/menu.html";
+    include "../HTML/menu.html";
 
     ?>
 
