@@ -3,14 +3,14 @@
 
 <head>
 <link rel="stylesheet" href="../CSS/instrumentoss.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-    <meta charset="utf-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">   
+    
     <title>Inicio</title>
     <link rel="stylesheet" href="../CSS/menu.css">
     <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../style.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
+     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <!-- jQuery library -->
@@ -25,69 +25,31 @@
 
 
 <body>
-
-
-    
-
     <?php
-
     include "../HTML/menu.html";
-
     ?>
-
-
-    <br><br><br>
-
-
-    
     <div class="container">
       <center><h1>Instrumentos</h1></center>  
     </div>
-
-
-    <br><br>
+         <br><br>
     
-
-
-
-
     <div class="container">
         <div class="row">
             <div class="col-xs-3">
-
              <h3>Filtrar por: </h3> <br>
              <button type="button" id="todos" class="btn btn-primary">Mostrar Todos</button> <br><br>
                 <button type="button" id="viento" class="btn btn-primary">Viento</button> <br><br>
                 <button type="button" id="percusion"  class="btn btn-primary">Percusion</button><br><br>
                 <button type="button" id="cuerda" class="btn btn-primary">Cuerda</button><br><br>
-
-
-
             </div>
 
             <div class="col-xs-9">
             <div id="contenidoInstrumentos"></div>
 
-            </div>
-
-
-
-
-            
-            
+            </div> 
         </div>
 
     </div>
-
-
-    
-
-
-
-
-
-
-
 </body>
 
 </html>
