@@ -27,45 +27,26 @@
 <body>
 
 
-    
 
     <?php
     include_once "../HTML/menu.html";
     ?>
-
-
-    <br><br><br>
-
-
-    
+    <br><br><br>   
     <div class="container">
       <center><h1>Instrumentos</h1></center>  
     </div>
-
-
     <br><br>
-    
-
-
-
-
     <div class="container">
         <div class="row">
             <div class="col-xs-3">
-
              <h3>Filtrar por: </h3> <br>
              <button type="button" id="todos" class="btn btn-primary">Mostrar Todos</button> <br><br>
                 <button type="button" id="viento" class="btn btn-primary">Viento</button> <br><br>
                 <button type="button" id="percusion"  class="btn btn-primary">Percusion</button><br><br>
                 <button type="button" id="cuerda" class="btn btn-primary">Cuerda</button><br><br>
-
-
-
             </div>
-
             <div class="col-xs-9">
             <div id="contenidoInstrumentos"></div>
-
             </div>            
         </div>
     </div>
