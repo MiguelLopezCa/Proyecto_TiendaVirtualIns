@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 
@@ -12,8 +13,6 @@
 }
 */
 
-
-
 header nav {
     width: 100%;
     max-width: 1000px;
@@ -22,8 +21,10 @@ header nav {
     position: absolute;
     left: 130px;
     top: -23px;
-    height:70px;
+    height: 70px;
 }
+
+
 /* 
 header nav ul {
     overflow: hidden;
