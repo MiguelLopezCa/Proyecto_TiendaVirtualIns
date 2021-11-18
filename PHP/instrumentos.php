@@ -30,9 +30,7 @@
     
 
     <?php
-
     include_once "../HTML/menu.html";
-
     ?>
 
 
