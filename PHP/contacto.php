@@ -57,7 +57,7 @@ include '../HTML/menu.html';
 <br>
 <div class="form">
     <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRUB4L_4nnA1iBT8cAbLgSEJ3N2c1MmWKX26qZtvRou2r9bQ/viewform?embedded=true" width="1000" height="1700"></iframe> -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCG1fst56ifbFaFQTz3p9T2tpZNEF7MXwyS5A5bLSFPlv5Q/viewform?embedded=true" width="1000" height="1700" ></iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOCG1fst56ifbFaFQTz3p9T2tpZNEF7MXwyS5A5bLSFPlv5Q/viewform?embedded=true" width="1000" height="1500" ></iframe>
     </div>
    
 <div class="mapi">

@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
 }
@@ -67,7 +67,4 @@ article {
 }
 
 .mapi iframe {
-    position: absolute;
-    top: 30px;
-    background-color: black;
-}
+    margin-left: -50px;
