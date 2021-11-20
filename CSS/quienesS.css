@@ -58,8 +58,7 @@
     float: none;
     border-bottom: 1px solid;
 } */
-            
-            .menu {
+            /* .menu {
                 display: block;
                 width: 100%;
                 background: rgb(243, 219, 167);
@@ -113,6 +112,7 @@
                 text-decoration: underline;
                 color: blueviolet;
             }
+             */
             
             #Izq {
                 position: absolute;
