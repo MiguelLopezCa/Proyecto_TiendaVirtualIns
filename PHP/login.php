@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Ingresar al sistema</title>
+    <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../css/loginS.css">
 </head>
 <body>
