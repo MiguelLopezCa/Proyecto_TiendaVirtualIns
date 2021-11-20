@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 * {
     margin: 0;
     padding: 0;
@@ -124,11 +126,12 @@ section {
     text-decoration: underline;
     color: blueviolet;
 }
+>>>>>>> a7505268e57ac1444c41bdcfb32c5225f1c79528
 
 section {
     position: relative;
     margin: 0;
-} */
+}
 
 #izq {
     position: absolute;
