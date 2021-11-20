@@ -85,10 +85,10 @@ section {
 
 .busc input {
     position: absolute;
-    top: 30px;
+    top: 28px;
     width: 0px;
     height: 20px;
-    left: 805px;
+    left: 808px;
     color: black;
     border-radius: 5px 5px 5px 5px;
     outline: none;
@@ -100,7 +100,7 @@ section {
     position: absolute;
     top: 10px;
     right: 190px;
-    background-color: rgb(121, 94, 94);
+    background-color: rgb(0, 0, 0);
     width: 55px;
     height: 55px;
     line-height: 55px;
