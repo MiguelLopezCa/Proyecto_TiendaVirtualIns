@@ -1,18 +1,16 @@
+
 <?php 
 $servidorDB = "localhost:3306";
 $nombreDb = "tiendavirtual";
 $usuarioDb = "root";
 $passwordDB = "";
-
 // Create connection
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
-
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title> Usuarios</title>
     <link rel="stylesheet" href="../CSS/lista.css">
      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
