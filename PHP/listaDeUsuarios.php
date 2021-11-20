@@ -15,17 +15,19 @@ $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
     <meta charset="UTF-8">
     <title> Usuarios</title>
     <link rel="stylesheet" href="../CSS/lista.css">
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
     <meta charset="utf-8" />
-    <title>Inicio</title>
     <link rel="stylesheet" href="../CSS/menu.css">
     <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-<?php 
-include '../HTML/menu.html';
-?>
+
+
 </head>
 <body>
+    <?php 
+include '../HTML/menu.html';
+?>
     <h1>LISTA DE USUARIOS</h1>
     <button class="regis"><a href="creacionUsuario.php">Registrar nuevo usuario</a></button>
     <table>
