@@ -29,22 +29,19 @@
     <div class="container">
       <center><h1>Instrumentos</h1></center>  
     </div>
-         <br><br>
-    
+
     <div class="container">
         <div class="row">
-            <div class="col-xs-3">
-             <h3 id="filtro">Filtrar por: </h3> <br>
-             <button type="button" id="todos" class="btnFilt btn btn-primary">Mostrar Todos</button> <br><br>
+            <div id="izq" class="col-xs-3">
+             <h3 id="filtro">Filtrar por: </h3>
+                <button type="button" id="todos" class="btnFilt btn btn-primary">Mostrar Todos</button> <br><br>
                 <button type="button" id="viento" class="btnFilt btn btn-primary">Viento</button> <br><br>
                 <button type="button" id="percusion"  class="btnFilt btn btn-primary">Percusion</button><br><br>
                 <button type="button" id="cuerda" class="btnFilt btn btn-primary">Cuerda</button><br><br>
             </div>
-
-            <div class="col-xs-9">
-            <div id="contenidoInstrumentos"></div>
-
-            </div> 
+                <div id="der" class="col-xs-9">
+                        <div id="contenidoInstrumentos"></div>
+                </div> 
         </div>
 
     </div>
