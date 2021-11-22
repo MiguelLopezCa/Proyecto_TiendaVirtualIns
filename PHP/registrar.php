@@ -44,7 +44,7 @@
         opacity: 70%;
     }
     </style>
-    <script type="javaScript"
+
     <?php 
 $persona =[
     'nombres'=>$_POST['nombre'],
