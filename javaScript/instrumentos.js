@@ -81,11 +81,7 @@ $(document).ready(function() {
 
                         concatenar += '<div class="row">';
                         // contador++;
-
-
-
                     }
-
                     if (categoriaActual != categoriaAnterior) {
 
                         concatenar += '</div> <br><br>';
@@ -97,24 +93,15 @@ $(document).ready(function() {
 
                     }
                     if (contador != 3 && categoriaActual == categoriaAnterior) {
-
                         ret();
-
-
-
-
-
                     } else if (contador == 3) {
                         concatenar += '</div><br><br>';
                         concatenar += '<div class="row">';
 
                         ret();
                         contador = 0;
-
                     }
                     contador++;
-
-
                     function ret() {
                         concatenar += '<div class="col-xs-3">';
                         concatenar += '<div class="card" style="width: 18rem;">';
@@ -129,24 +116,12 @@ $(document).ready(function() {
                         concatenar += '</div>';
 
                     }
-
-
-
                 }
-
-
-
                 $("#contenidoInstrumentos").html(concatenar);
 
                 console.log(concatenar);
-
-
-
-
             }
         })
-
-
     }
 
     $("#percusion").click(function() {
@@ -168,13 +143,8 @@ $(document).ready(function() {
             success: function(respuesta) {
 
                 cargarContenido(respuesta);
-
-
             }
         })
-
-
-
     })
 
     $("#cuerda").click(function() {
@@ -196,23 +166,13 @@ $(document).ready(function() {
             success: function(respuesta) {
 
                 cargarContenido(respuesta);
-
-
             }
         })
-
-
-
-
-
     })
-
     function cargarContenido(datos) {
 
         var concatenar = "";
         var contador = 0;
-
-
 
         datos.forEach(cargarDatosIns);
 
@@ -222,14 +182,10 @@ $(document).ready(function() {
                 concatenar += '<br><br>';
                 concatenar += '<div class="row">';
 
-
             }
 
             if (contador != 3) {
                 ret();
-
-
-
 
             } else if (contador == 3) {
                 concatenar += '</div><br><br>';
@@ -254,11 +210,6 @@ $(document).ready(function() {
                 concatenar += '</div>';
 
             }
-
-
-
-
-
         }
 
         $("#contenidoInstrumentos").html("");

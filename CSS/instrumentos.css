@@ -1,0 +1,36 @@
+*{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+    height: 60px;
+}
+#todos{
+    left:5%;
+    top:25%;
+    width: 200px;
+    height:40px ;
+}
+#cuerda{
+    left:5%;
+    top:50%;
+    width: 200px;
+    height:40px ;
+}
+#viento{
+    left:5%;
+    top:75%;
+    width: 200px;
+    height:40px ;
+}
+#percusion{
+    left:5%;
+    top:100%;
+    width: 200px;
+    height:40px ;
+}
+#filtro{
+    position: absolute;
+    left:20%;
+}
