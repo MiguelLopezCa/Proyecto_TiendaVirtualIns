@@ -67,5 +67,6 @@
                     }
                     
                     .mapi iframe {
-                        margin-left: -50px;
+                        position: absolute;
+                        left: 0px;
                     }
