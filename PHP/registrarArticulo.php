@@ -47,7 +47,6 @@
 
     <?php 
 $instrumento =[
-    'id'=>'',
     'nombre'=>'',
     'descripcion'=>'',
     'link'=>'',
@@ -60,7 +59,7 @@ $passwordDB = "";
 
 // Create connection
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
-$sql="insert into instrumento (id , nombre , descripcion , link , id_tipoInstrumento )";
+$sql="insert into instrumento (nombre , descripcion , link , id_tipoInstrumento )";
 $sql.="values('".$instrumento['nombre'] ."','".$instrumento['descripcion'] ."','".$instrumento['link'] ."','".$instrumento['id_tipoInstrumento'] .")";
 $resultadoQuery= $conn->query($sql);
 

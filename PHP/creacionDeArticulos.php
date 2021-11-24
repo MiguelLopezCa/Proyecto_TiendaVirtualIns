@@ -1,9 +1,7 @@
 <?php 
-$id = empty($_GET['id'])? null: $_GET['id'];
 $tituloForm = empty($id)?"Registrar Articulo":"Modificar";
 $actionForm = empty($id)?"registrarArticulo.php":"actualizar.php";
 $instrumento =[
-    'id'=>'',
     'nombre'=>'',
     'descripcion'=>'',
     'link'=>'',
@@ -37,7 +35,7 @@ $instrumento =[
         $resultadoQuery= $conn->query($sql);
         if($resultadoQuery->num_rows>0){
             while($row= $resultadoQuery->fetch_assoc()){
-                $instrumento['id']=$row['ide'];
+             
                 $instrumento['nombre']=$row['nombre'];
                 $instrumento['descripcion']=$row['descripcion'];
                 $instrumento['link']=$row['link'];
