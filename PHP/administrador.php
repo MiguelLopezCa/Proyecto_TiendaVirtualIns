@@ -16,10 +16,34 @@ include'../PHP/db.php';
     <?php 
 include '../HTML/menu.html';
 ?>
+<style> 
+#lista{
+    position: absolute;
+    width: 500px;
+    left:calc( 50% - 250px);
+
+}
+#btnAgr{
+    position:absolute;
+    background-color:rgb(246, 219, 167);
+    text-align:center;
+    width: 200px;
+    height: 25px;
+    border-radius: 3%;
+    left: calc( 50% - 100px);
+}
+#btnAgr:hover{
+    background-color:red;
+}
+</style>
 </head>
 <body>
-
+<center>
 <h1 id="lista">LISTA DE USUARIOS</h1>
+<br>
+<br>
+<br>
+
      <table>
         <thead>
             <tr>
@@ -61,7 +85,10 @@ include '../HTML/menu.html';
             </tr>
         </tbody>
     </table>
-  
+    </center>
+  <div>
+  <a id="btnAgr" href= "creacionDeArticulos.php">Agregar instrumentos</a>
+  </div>
     
 </body>
 </html>

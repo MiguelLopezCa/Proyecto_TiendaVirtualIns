@@ -65,7 +65,7 @@ $instrumento =[
         </div>
        
         <div>
-        <label class="lblDatos" id="lblLink" for="link"> Usuario</label>
+        <label class="lblDatos" id="lblLink" for="link"> Link</label>
         <input class="inpDatos" id="link" name="link" type="text" value="<?php echo$instrumento['link'] ?>" placeholder="Ingrese el link de la ubucacion de la foto" required />
         </div>              
         <div>
