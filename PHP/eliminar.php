@@ -1,16 +1,8 @@
 <?php 
+include'../PHP/db.php';
 $identificacion = empty($_GET['identificacion']) ? 0 : $_GET['identificacion'];
-$servidorDB = "localhost:3306";
-$nombreDb = "tiendavirtual";
-$usuarioDb = "root";
-$passwordDB = "";
-
-// Create connection
-$conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
-
 $sql="delete from persona ";
-$sql .= " where 'identificacion' =".$identificacion;
-
+$sql .= " where identificacion =". $identificacion;
 $resultadoQuery= $conn->query($sql);
 
 $conn->close();
@@ -28,10 +20,10 @@ $conn->close();
     if($resultadoQuery){
         echo '<p>Se elimino el registro.</P>';
     }else{
-        echo '<p>presentó un error al guardar los datos. Vuelva a intentar</P>';
+        echo '<p>presentó un error al eliminar los datos. Vuelva a intentar</P>';
     }
     echo '<br>'; 
-    echo '<a href= "listaDeUsuarios.php">Volver a la lista</a>';
+    echo '<a href= "administrador.php">Volver a la lista</a>';
     ?>
 </body>
 </html>

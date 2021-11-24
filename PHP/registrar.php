@@ -80,7 +80,7 @@ $conn->close();
     }else{
         echo '<p>presentó un error al guardar los datos. Vuelva a intentar</P>';
         echo '<br>'; 
-        echo '<a href= "creacionUsuario.php">Volver</a>';
+        echo '<a href= "administrador.php">Volver</a>';
     }
     ?>
 </body>

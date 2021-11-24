@@ -1,17 +1,12 @@
 
 <?php 
-$servidorDB = "localhost:3306";
-$nombreDb = "tiendavirtual";
-$usuarioDb = "root";
-$passwordDB = "";
-// Create connection
-$conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
+include'../PHP/db.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
-    <title>Lista de usuarios</title>
+    <title>Administrador</title>
     <link rel="stylesheet" href="../CSS/listaUs.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
     <link rel="stylesheet" href="../CSS/menu.css">
@@ -23,9 +18,9 @@ include '../HTML/menu.html';
 ?>
 </head>
 <body>
-<h1>LISTA DE USUARIOS</h1>
-    <button class="regis"><a href="creacionUsuario.php">Registrar nuevo usuario</a></button>
-    <table>
+
+<h1 id="lista">LISTA DE USUARIOS</h1>
+     <table>
         <thead>
             <tr>
                 <th>Nombre Apellido</th>
@@ -52,7 +47,7 @@ include '../HTML/menu.html';
                     echo '<td>'.$row['rol'].'</td>';
                     echo '<td>'.$row['telefono'].'</td>';
                     echo '<td>';
-                    echo '<a href="eliminar.php?identificacion='.$row['identificacion'].'">Eliminar</a>';
+                    echo '<a href="eliminar.php? identificacion='.$row['identificacion'].'">Eliminar</a>';
                     echo '</td>';
                     echo '</td>';
                 }

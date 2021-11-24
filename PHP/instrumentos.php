@@ -18,7 +18,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src='../javaScript/instrumentos.js'></script>
+    <script src='../javaScript/instrumentoss.js'></script>
 </head>
 <body>
     <header>

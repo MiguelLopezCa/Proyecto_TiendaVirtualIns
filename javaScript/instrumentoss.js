@@ -109,7 +109,7 @@ $(document).ready(function() {
                         concatenar += ' <div class="card-body">';
                         concatenar += '<h5 class="card-title">' + item.nombre + '</h5>';
                         concatenar += '<p class="card-text">' + item.descricion + '</p>';
-                        concatenar += '<a href="#" class="btn btn-primary">Go somewhere</a>';
+                        concatenar += '<a href="#" class="btn btn-primary">Descripción</a>';
                         concatenar += ' </div>';
                         concatenar += '</div>';
 
@@ -203,7 +203,7 @@ $(document).ready(function() {
                 concatenar += ' <div class="card-body">';
                 concatenar += '<h5 class="card-title">' + item.nombre + '</h5>';
                 concatenar += '<p class="card-text">' + item.descricion + '</p>';
-                concatenar += '<a href="#" class="btn btn-primary">Go somewhere</a>';
+                concatenar += '<a href="#" class="btn btn-primary">Descripción</a>';
                 concatenar += ' </div>';
                 concatenar += '</div>';
 

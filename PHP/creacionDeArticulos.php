@@ -1,6 +1,6 @@
 <?php 
-$id = empty($_GET['identificacion'])? null: $_GET['identificacion'];
-$tituloForm = empty($id)?"Registrar":"Modificar";
+$id = empty($_GET['idE'])? null: $_GET['idE'];
+$tituloForm = empty($id)?"Registrar Articulo":"Modificar";
 $actionForm = empty($id)?"registrar.php":"actualizar.php";
 $persona =[
     'nombres'=>'',
@@ -18,7 +18,7 @@ $persona =[
 <head>
     <meta charset="UTF-8">
     <title>Crear usuario</title>
-    <link rel="stylesheet" href="../css/ceracionUsua.css">
+    <link rel="stylesheet" href="../css/creacionDeArticulos.css">
 </head>
 <body style=" background-image: url(../resource/fondo1.jpg) ;">
 
