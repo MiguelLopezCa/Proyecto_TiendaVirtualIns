@@ -61,7 +61,7 @@ $passwordDB = "";
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
 $sql="insert into instrumento (nombre , descricion , link , id_tipoInstrumento )";
 $sql.="values('".$instrumento['nombre'] ."','".$instrumento['descripcion'] ."','".$instrumento['link'] ."','".$instrumento['id_tipoInstrumento'] ."')";
-echo $sql;
+
 
 $resultadoQuery= $conn->query($sql);
 
@@ -82,6 +82,6 @@ $conn->close();
         echo '<a href= "creacionDeArticulos.php">Volver</a>';
     }
     ?>
-    echo $sql;
+   
 </body>
 </html>
