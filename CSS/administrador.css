@@ -1,0 +1,19 @@
+#lista {
+    position: absolute;
+    width: 500px;
+    left: calc( 50% - 250px);
+}
+
+#btnAgr {
+    position: absolute;
+    background-color: rgb(246, 219, 167);
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    border-radius: 3%;
+    left: calc( 50% - 100px);
+}
+
+#btnAgr:hover {
+    background-color: red;
+}
