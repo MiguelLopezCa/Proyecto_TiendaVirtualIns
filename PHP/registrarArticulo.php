@@ -47,10 +47,10 @@
 
     <?php 
 $instrumento =[
-    'nombre'=>'',
-    'descripcion'=>'',
-    'link'=>'',
-    'id_tipoInstrumento'=>'',
+    'nombre'=>$_POST['nombre'],
+    'descripcion'=>$_POST['descripcion'],
+    'link'=>$_POST['link'],
+    'id_tipoInstrumento'=>$_POST['rol'],
 ];
 $servidorDB = "localhost:3306";
 $nombreDb = "tiendavirtual";
@@ -59,8 +59,10 @@ $passwordDB = "";
 
 // Create connection
 $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
-$sql="insert into instrumento (nombre , descripcion , link , id_tipoInstrumento )";
-$sql.="values('".$instrumento['nombre'] ."','".$instrumento['descripcion'] ."','".$instrumento['link'] ."','".$instrumento['id_tipoInstrumento'] .")";
+$sql="insert into instrumento (nombre , descricion , link , id_tipoInstrumento )";
+$sql.="values('".$instrumento['nombre'] ."','".$instrumento['descripcion'] ."','".$instrumento['link'] ."','".$instrumento['id_tipoInstrumento'] ."')";
+echo $sql;
+
 $resultadoQuery= $conn->query($sql);
 
 $conn->close();
