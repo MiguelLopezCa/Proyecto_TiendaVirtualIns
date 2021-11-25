@@ -80,5 +80,6 @@ $conn->close();
         echo '<a href= "creacionDeArticulos.php">Volver</a>';
     }
     ?>
+    echo $sql;
 </body>
 </html>
