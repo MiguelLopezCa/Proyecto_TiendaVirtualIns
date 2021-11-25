@@ -15,7 +15,7 @@ $instrumento =[
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Crear usuario</title>
+    <title>Agregar instrumento</title>
     <link rel="stylesheet" href="../css/creacionDeArticulos.css">
 </head>
 <body style=" background-image: url(../resource/fondo1.jpg) ;">
@@ -86,6 +86,5 @@ $instrumento =[
     </form>
    
 </div>
-<script type="text/javascript" src="../javaScript/crearUsuario.js"></script>
 </body>
  </html>

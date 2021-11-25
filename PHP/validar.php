@@ -25,11 +25,11 @@ $resultado=mysqli_query($conexion, $consulta);
 
 $filas=mysqli_num_rows($resultado);
 
-if($filas){
-    if ($rol==="Cliente"){
+if($rol){
+    if ($rol=='cliente'){
       header("location:../PHP/inicio.php");
     }else{
-     header("location:../PHP/listaDeUsuarios.php");
+     header("location:../PHP/administrador.php");
     }
 
 }else{
