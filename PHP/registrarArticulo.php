@@ -79,6 +79,7 @@ $conn->close();
     }else{
         echo '<p>presentó un error al guardar los datos. Vuelva a intentar</P>';
         echo '<br>'; 
+        echo $sql;
         echo '<a href= "creacionDeArticulos.php">Volver</a>';
     }
     ?>
