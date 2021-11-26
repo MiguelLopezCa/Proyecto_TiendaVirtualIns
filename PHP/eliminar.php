@@ -11,6 +11,8 @@ $conn->close();
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../resource/logo.jpg">
+    <link rel="stylesheet" href="../CSS/eliminar.css">
     
     <title>Registro</title>
 </head>
@@ -18,12 +20,12 @@ $conn->close();
     <h1>Resultado de la operación</h1>
     <?php 
     if($resultadoQuery){
-        echo '<p>Se elimino el registro.</P>';
+        echo '<p>Se eliminó el registro.</P>';
     }else{
         echo '<p>presentó un error al eliminar los datos. Vuelva a intentar</P>';
     }
     echo '<br>'; 
-    echo '<a href= "administrador.php">Volver a la lista</a>';
+    echo '<a href= "administrador.php"><button>Volver a la lista</button></a>';
     ?>
 </body>
 </html>

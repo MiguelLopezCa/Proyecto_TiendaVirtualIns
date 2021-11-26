@@ -18,7 +18,7 @@ $instrumento =[
     <title>Agregar instrumento</title>
     <link rel="stylesheet" href="../css/creacionDeArticulos.css">
 </head>
-<!-- <body style=" background-image: url(../resource/fondo1.jpg) ;"> -->
+<body style=" background-image: url(../resource/fondo1.jpg) ;">
 
     <h1 id="titulo"><?php echo $tituloForm; ?> </h1>
     </br>
@@ -59,7 +59,7 @@ $instrumento =[
             <input class="inpDatos" id="nombre" name="nombre" type="text" value="<?php echo$instrumento['nombre'] ?>" placeholder="Ingrese el nombre del instrumento" required />
         </div>
         <div>
-            <label class="lblDatos" id="lblDescr" for="descripcion"> descripcion </label>
+            <label class="lblDatos" id="lblDescr" for="descripcion"> Descripción </label>
             <input class="inpDatos" id="descripcion" name="descripcion" type="text" value="<?php echo$instrumento['descripcion'] ?>" placeholder="Ingresela descripcion" required/>
                         
         </div>
@@ -69,12 +69,12 @@ $instrumento =[
         <input class="inpDatos" id="link" name="link" type="text" value="<?php echo$instrumento['link'] ?>" placeholder="Ingrese el link de la ubucacion de la foto" required />
         </div>              
         <div>
-        <label class="lblDatos" id="lblRol" for="rol"> tipo de instrumento</label>
+        <label class="lblDatos" id="lblRol" for="rol"> Tipo de instrumento</label>
         <select class="inpDatos" id="rol"  name="rol" required value="<?php echo$instrumento['id_tipoInstrumento'] ?>">
                  <option value="seleccione" selected>Seleccione  </option>
-                <option value="1">viento  </option>
-                <option value="2"> cuerda </option>
-                <option value="3">percusion  </option>
+                <option value="1">Viento  </option>
+                <option value="2"> Cuerda </option>
+                <option value="3">Percusión  </option>
         </select>
         </div>                    
            

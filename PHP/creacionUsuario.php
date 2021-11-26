@@ -18,6 +18,7 @@ $persona =[
 <head>
     <meta charset="UTF-8">
     <title>Crear usuario</title>
+    <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../css/ceracionUsua.css">
 </head>
 <body style=" background-image: url(../resource/fondo1.jpg) ;">
