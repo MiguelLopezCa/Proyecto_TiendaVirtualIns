@@ -1,8 +1,8 @@
 <?php 
 include'../PHP/db.php';
-$id = empty($_GET['id']) ? 0 : $_GET['id'];
-$sql="delete from instrumento ";
-$sql .= " where id =". $id;
+$ide = empty($_GET['ide']) ? 0 : $_GET['ide'];
+$sql="delete from instrumento";
+$sql .= " where ide =".$ide;
 $resultadoQuery= $conn->query($sql);
 
 $conn->close();

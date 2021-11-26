@@ -84,6 +84,7 @@ include '../HTML/menu.html';
     <table>
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Link</th>
@@ -95,18 +96,18 @@ include '../HTML/menu.html';
         <tbody>
         
         <?php
-            $sql = "select * from instrumento, tipoinstrumento ";
-            
+            $sql = "select * from instrumento";
             $resultadoQuery = $conn->query($sql);
             if ($resultadoQuery->num_rows>0){
                 while($row=$resultadoQuery->fetch_assoc()){
                     echo '<tr>';
+                    echo '<td>'.$row['ide'].'</td>';
                     echo '<td>'.$row['nombre'].'</td>';
                     echo '<td>'.$row['descricion'].'</td>';
                     echo '<td>'.$row['link'].'</td>';
-                    echo '<td>'.$row['descripcion'].'</td>';
+                    echo '<td>'.$row['id_tipoInstrumento'].'</td>';
                     echo '<td>';
-                    echo '<a href="eliminarInstrumento.php? id='.$row['id'].'">Eliminar</a>';
+                    echo '<a href="eliminarInstrumento.php? ide='.$row['ide'].'">Eliminar</a>';
                     echo '</td>';
                     echo '</td>';
                 }

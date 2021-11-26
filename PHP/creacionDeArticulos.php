@@ -1,9 +1,9 @@
 <?php 
-$id = empty($_GET['id'])? null: $_GET['id'];
-$tituloForm = empty($id)?"Registrar Articulo":"Modificar";
-$actionForm = empty($id)?"registrarArticulo.php":"actualizar.php";
+$ide = empty($_GET['ide'])? null: $_GET['ide'];
+$tituloForm = empty($ide)?"Registrar Articulo":"Modificar";
+$actionForm = empty($ide)?"registrarArticulo.php":"actualizar.php";
 $instrumento =[
-    'id'=>'',
+    'ide'=>'',
     'nombre'=>'',
     'descripcion'=>'',
     'link'=>'',
@@ -26,18 +26,18 @@ $instrumento =[
     </br></br>
     <form action="<?php echo $actionForm;?>" method="POST">
     <?php
-    if (!empty($id)){
+    if (!empty($ide)){
         $servidorDB = "localhost:3306";
         $nombreDb = "tiendavirtual";
         $usuarioDb = "root";
         $passwordDB = "";
         // Create connection
         $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
-        $sql = "SELECT * FROM instrumento WHERE id=".$id;
+        $sql = "SELECT * FROM instrumento WHERE ide=".$ide;
         $resultadoQuery= $conn->query($sql);
         if($resultadoQuery->num_rows>0){
             while($row= $resultadoQuery->fetch_assoc()){
-                $instrumento['id']=$row['ide'];
+                $instrumento['ide']=$row['ide'];
                 $instrumento['nombre']=$row['nombre'];
                 $instrumento['descripcion']=$row['descripcion'];
                 $instrumento['link']=$row['link'];
