@@ -1,7 +1,11 @@
 $(document).ready(function() {
 
 
-    cargarTodos();
+
+
+
+
+    cargarTodos("");
 
 
 
@@ -9,7 +13,7 @@ $(document).ready(function() {
         $("#contenidoInstrumentos").html("");
 
 
-        cargarTodos();
+        cargarTodos("");
     })
 
     $("#viento").click(function() {
@@ -45,7 +49,7 @@ $(document).ready(function() {
 
     })
 
-    function cargarTodos() {
+    function cargarTodos(idBuscarDescripcion) {
 
         var cargarTodos = "cargar";
 
@@ -63,10 +67,34 @@ $(document).ready(function() {
             processData: false,
             success: function(respuesta) {
 
+
+
+                if (idBuscarDescripcion != null) {
+                    $("#descripcionModal").html("");
+                    respuesta.forEach(buscarDescripcion);
+
+
+                    function buscarDescripcion(item, index) {
+
+
+                        if (Number(idBuscarDescripcion) == respuesta[index][0]) {
+                            $("#descripcionModal").append('<br><h4>' + item.descricion + '</h4>');
+
+                        }
+
+                    }
+
+                }
+
                 var concatenar = "";
 
                 var categoriaAnterior = 0;
                 var contador = 0;
+
+
+                datosInstrumento = respuesta;
+
+                console.log(respuesta);
 
                 respuesta.forEach(cargarContenido);
 
@@ -102,14 +130,17 @@ $(document).ready(function() {
                         contador = 0;
                     }
                     contador++;
+
                     function ret() {
+
+                        var valordescripcion = item.descricion;
                         concatenar += '<div class="col-xs-3">';
                         concatenar += '<div class="card" style="width: 18rem;">';
                         concatenar += '<img src=' + item.link + ' class="card-img-top" alt="...">';
                         concatenar += ' <div class="card-body">';
                         concatenar += '<h5 class="card-title">' + item.nombre + '</h5>';
                         concatenar += '<p class="card-text">' + item.descricion + '</p>';
-                        concatenar += '<a href="#" class="btn btn-primary">Descripción</a>';
+                        concatenar += '<a href="#" class="btn btn-primary" id="mostrarInstrumento" imagen=' + item.link + ' descripcion=' + valordescripcion + ' nombre=' + item.nombre + ' tipo=' + item.descripcion + ' idInstrumento=' + respuesta[index][0] + '> Descripción </a>';
                         concatenar += ' </div>';
                         concatenar += '</div>';
 
@@ -169,14 +200,49 @@ $(document).ready(function() {
             }
         })
     })
-    function cargarContenido(datos) {
+
+    function cargarContenido(datos, idBuscarDescripcion) {
 
         var concatenar = "";
         var contador = 0;
 
+        if (idBuscarDescripcion != null) {
+            $("#descripcionModal").html("");
+            respuesta.forEach(buscarDescripcion);
+
+
+            function buscarDescripcion(item, index) {
+
+
+                if (Number(idBuscarDescripcion) == respuesta[index][0]) {
+                    $("#descripcionModal").append('<br><h4>' + item.descricion + '</h4>');
+
+                }
+
+            }
+
+        }
+
         datos.forEach(cargarDatosIns);
 
         function cargarDatosIns(item, index) {
+
+            if (idBuscarDescripcion != null) {
+                $("#descripcionModal").html("");
+                datos.forEach(buscarDescripcion);
+
+
+                function buscarDescripcion(item, index) {
+
+
+                    if (Number(idBuscarDescripcion) == datos[index][0]) {
+                        $("#descripcionModal").append('<br><h4>' + item.descricion + '</h4>');
+
+                    }
+
+                }
+
+            }
 
             if (contador == 0) {
                 concatenar += '<br><br>';
@@ -203,7 +269,7 @@ $(document).ready(function() {
                 concatenar += ' <div class="card-body">';
                 concatenar += '<h5 class="card-title">' + item.nombre + '</h5>';
                 concatenar += '<p class="card-text">' + item.descricion + '</p>';
-                concatenar += '<a href="#" class="btn btn-primary">Descripción</a>';
+                concatenar += '<a href="#" class="btn btn-primary" id="mostrarInstrumento" imagen=' + item.link + ' descripcion=' + item.descricion + ' nombre=' + item.nombre + ' tipo=' + item.descripcion + ' idInstrumento=' + datos[index][0] + '> Descripción </a>';
                 concatenar += ' </div>';
                 concatenar += '</div>';
 
@@ -217,6 +283,48 @@ $(document).ready(function() {
 
 
     }
+
+    $("#contenidoInstrumentos").on("click", "#mostrarInstrumento", function() {
+
+
+        var imagen = $(this).attr("imagen");
+        var nombre = $(this).attr("nombre");
+        var tipo = $(this).attr("tipo");
+        var descripcion = $(this).attr("descripcion");
+        var id = $(this).attr("idInstrumento");
+        cargarTodos(id);
+
+        var concatenar = "";
+
+        //concatenar += '<div class ="carousel-item active">';
+        concatenar += '<img class ="d-block w-100" src=' + imagen + ' alt ="First slide" >';
+        //concatenar += ' </div>';
+        $("#imagenInstrumentoModal").html(concatenar);
+
+
+        $("#tipoInstrumento").html('<br><h4>' + tipo + '</h4>')
+
+        $("#instrumentosModal").modal('toggle');
+
+
+
+
+
+
+
+
+
+
+
+
+    })
+
+    $("#cerrarModal").click(function() {
+        $("#instrumentosModal").modal('toggle');
+
+
+    });
+
 
 
 

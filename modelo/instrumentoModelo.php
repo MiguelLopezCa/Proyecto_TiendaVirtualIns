@@ -6,7 +6,7 @@ class instrumentosModelo{
 
 public static function cargarTodos(){
 
-    $objConsulta =conexion::conectar()->prepare("SELECT * FROM instrumento INNER JOIN tipoinstrumento on instrumento.id_tipoInstrumento = tipoinstrumento.id ORDER BY tipoinstrumento.id");
+    $objConsulta =conexion::conectar()->prepare("SELECT instrumento.id as idInstrumento,instrumento.descricion,instrumento.link,tipoinstrumento.descripcion FROM instrumento INNER JOIN tipoinstrumento on instrumento.id_tipoInstrumento = tipoinstrumento.id ORDER BY tipoinstrumento.id;");
     $objConsulta->execute();
     $lista=$objConsulta->fetchAll();
     return $lista;
@@ -14,7 +14,7 @@ public static function cargarTodos(){
 
 public static function mdlCuerda(){
 
-    $objConsulta =conexion::conectar()->prepare("SELECT * FROM instrumento INNER JOIN tipoinstrumento on instrumento.id_tipoInstrumento = tipoinstrumento.id WHERE descripcion='Cuerda'");
+    $objConsulta =conexion::conectar()->prepare("SELECT instrumento.id as idInstrumento,instrumento.descricion,instrumento.link,tipoinstrumento.descripcion  FROM instrumento INNER JOIN tipoinstrumento on instrumento.id_tipoInstrumento = tipoinstrumento.id WHERE descripcion='Cuerda'");
     $objConsulta->execute();
     $lista=$objConsulta->fetchAll();
 
@@ -23,7 +23,7 @@ public static function mdlCuerda(){
 
 public static function mdlViento(){
 
-    $objConsulta =conexion::conectar()->prepare("SELECT * FROM instrumento INNER JOIN tipoinstrumento on instrumento.id_tipoInstrumento = tipoinstrumento.id WHERE descripcion='Viento'");
+    $objConsulta =conexion::conectar()->prepare("SELECT instrumento.id as idInstrumento,instrumento.descricion,instrumento.link,tipoinstrumento.descripcion FROM instrumento INNER JOIN tipoinstrumento on instrumento.id_tipoInstrumento = tipoinstrumento.id WHERE descripcion='Viento'");
     $objConsulta->execute();
     $lista=$objConsulta->fetchAll();
 
@@ -32,7 +32,7 @@ public static function mdlViento(){
 
 public static function mdlPercusion(){
 
-    $objConsulta =conexion::conectar()->prepare("SELECT * FROM instrumento INNER JOIN tipoinstrumento on instrumento.id_tipoInstrumento = tipoinstrumento.id WHERE descripcion='Percusion'");
+    $objConsulta =conexion::conectar()->prepare("SELECT instrumento.id as idInstrumento,instrumento.descricion,instrumento.link,tipoinstrumento.descripcion FROM instrumento INNER JOIN tipoinstrumento on instrumento.id_tipoInstrumento = tipoinstrumento.id WHERE descripcion='Percusion'");
     $objConsulta->execute();
     $lista=$objConsulta->fetchAll();
 
