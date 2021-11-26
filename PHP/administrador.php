@@ -21,11 +21,17 @@ include '../HTML/menu.html';
 </head>
 <body>
 <center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <h1 id="lista">LISTA DE USUARIOS</h1>
 <br>
 <br>
 <br>
-
+<div class="tabla">
      <table>
         <thead>
             <tr>
@@ -40,6 +46,7 @@ include '../HTML/menu.html';
             </tr>
         </thead>
         <tbody>
+        
         <?php
             $sql = "select * from persona";
             $resultadoQuery = $conn->query($sql);
@@ -67,8 +74,10 @@ include '../HTML/menu.html';
             </tr>
         </tbody>
     </table>
+    </div>
     </center>
   <div>
+<br>
   <a id="btnAgr" href= "creacionDeArticulos.php">Agregar instrumentos</a>
   </div>
     

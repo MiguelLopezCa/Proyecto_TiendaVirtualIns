@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(255, 250, 205, 0.521);
+}
+
 #lista {
     position: absolute;
     width: 500px;
@@ -10,10 +14,25 @@
     text-align: center;
     width: 200px;
     height: 25px;
-    border-radius: 3%;
+    border-radius: 10px;
     left: calc( 50% - 100px);
+    color: black;
 }
 
 #btnAgr:hover {
-    background-color: red;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#btnAgr:active {
+    color: rgb(110, 3, 3);
+}
+
+table thead th {
+    border: solid 2px;
+    background-color: wheat;
+}
+
+table tbody td {
+    border: solid 2px;
 }
