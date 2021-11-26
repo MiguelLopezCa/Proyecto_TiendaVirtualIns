@@ -18,7 +18,7 @@ $instrumento =[
     <title>Agregar instrumento</title>
     <link rel="stylesheet" href="../css/creacionDeArticulos.css">
 </head>
-<body style=" background-image: url(../resource/fondo1.jpg) ;">
+<!-- <body style=" background-image: url(../resource/fondo1.jpg) ;"> -->
 
     <h1 id="titulo"><?php echo $tituloForm; ?> </h1>
     </br>
