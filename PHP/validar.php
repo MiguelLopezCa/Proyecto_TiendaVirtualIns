@@ -25,7 +25,7 @@ $resultado=mysqli_query($conexion, $consulta);
 
 $filas=mysqli_num_rows($resultado);
 
-if($rol){
+if($filas ){
     if ($rol=='cliente'){
       header("location:../PHP/inicio.php");
     }else{
