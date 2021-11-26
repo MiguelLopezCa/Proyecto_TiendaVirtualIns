@@ -74,6 +74,52 @@ include '../HTML/menu.html';
             </tr>
         </tbody>
     </table>
+    <br>
+<br>
+<br>
+<h1 id="lista">LISTA DE INSTRUMENTOS</h1>
+<br>
+<br>
+<br>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Link</th>
+                <th>tipo de instrumento</th>
+                <th>Eliminar</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+        
+        <?php
+            $sql = "select * from instrumento, tipoinstrumento ";
+            
+            $resultadoQuery = $conn->query($sql);
+            if ($resultadoQuery->num_rows>0){
+                while($row=$resultadoQuery->fetch_assoc()){
+                    echo '<tr>';
+                    echo '<td>'.$row['nombre'].'</td>';
+                    echo '<td>'.$row['descricion'].'</td>';
+                    echo '<td>'.$row['link'].'</td>';
+                    echo '<td>'.$row['descripcion'].'</td>';
+                    echo '<td>';
+                    echo '<a href="eliminarInstrumento.php? id='.$row['id'].'">Eliminar</a>';
+                    echo '</td>';
+                    echo '</td>';
+                }
+              }else{
+                  echo'<tr>';
+                  echo'<td colspan="7">no hay registros</td>';
+                  echo'</tr>';
+              }
+        ?>
+             <tr>
+            </tr>
+        </tbody>
+    </table>
     </div>
     </center>
   <div>
