@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="../CSS/registrarArticulo.css">
 
     <?php 
-
-
 $instrumento =[
     'nombre'=>$_POST['nombre'],
     'descripcion'=>$_POST['descripcion'],
@@ -28,31 +26,7 @@ $sql.="values('".$instrumento['nombre'] ."','".$instrumento['descripcion'] ."','
 
 $resultadoQuery= $conn->query($sql);
 
-
-try {
-    $instrumento =[
-        'nombre'=>'',
-        'descripcion'=>'',
-        'link'=>'',
-        'id_tipoInstrumento'=>'',
-    ];
-    $servidorDB = "localhost:3306";
-    $nombreDb = "tiendavirtual";
-    $usuarioDb = "root";
-    $passwordDB = "";
-    
-    // Create connection
-    $conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
-    $sql="insert into instrumento (nombre , descripcion , link , id_tipoInstrumento )";
-    $sql.="values('".$instrumento['nombre'] ."','".$instrumento['descripcion'] ."','".$instrumento['link'] ."','".$instrumento['id_tipoInstrumento'] .")";
-    $resultadoQuery= $conn->query($sql);
-    
-    $conn->close();
-    
-} catch (Exception $th) {
-   echo  $th;
-}
-
+$conn->close();
 ?>
 </head>
 <body>
