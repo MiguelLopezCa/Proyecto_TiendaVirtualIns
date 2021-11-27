@@ -56,7 +56,7 @@ $persona =[
     }
 
     ?>  
-    <form>
+    
         <div id="divCont">
 		<form action="" class="formulario" id="formulario">	
 		<div class="formulario__grupo divDatos" id="grupo__nombre">
@@ -128,7 +128,7 @@ $persona =[
 			    
 	</div>    
             
-            <button  id="btnGuardar" class="inpDatos btnCr"  name="submit" type="submit" >Guardar</button>
+                     <button  id="btnGuardar" class="inpDatos btnCr"  name="submit" type="submit" >Guardar</button>
                     <button id="btnCancelar" class="inpDatos btnCr" type="reset">Cancelar</button>
                     <button id="btnRegresar" class="inpDatos btnCr" onclick="window.location.href='../PHP/login.php'" type="button">Regresar</button>
         
