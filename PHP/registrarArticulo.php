@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="../CSS/registrarArticulo.css">
 
     <?php 
-<<<<<<< HEAD
 
-=======
+
 $instrumento =[
     'nombre'=>$_POST['nombre'],
     'descripcion'=>$_POST['descripcion'],
@@ -28,7 +27,7 @@ $sql.="values('".$instrumento['nombre'] ."','".$instrumento['descripcion'] ."','
 
 
 $resultadoQuery= $conn->query($sql);
->>>>>>> 92fd0047fcffd1bbcdd6a9fbcbdb6460592d573f
+
 
 try {
     $instrumento =[
