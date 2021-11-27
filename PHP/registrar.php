@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
+    <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../CSS/registrar.css">
 
     <?php 

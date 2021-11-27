@@ -16,6 +16,7 @@ $instrumento =[
 <head>
     <meta charset="UTF-8">
     <title>Agregar instrumento</title>
+    <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../css/creacionDeArticulos.css">
 </head>
 <body style=" background-image: url(../resource/fondo1.jpg) ;">

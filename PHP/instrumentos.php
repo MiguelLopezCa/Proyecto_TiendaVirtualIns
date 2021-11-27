@@ -26,6 +26,8 @@
         <?php
         include "../HTML/menu.html";
         ?>
+    <link rel="shortcut icon" href="../resource/logo.jpg">
+
     </header>
     <div class="container">
         <center>
