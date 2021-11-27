@@ -12,30 +12,12 @@ include'../PHP/db.php';
     <link rel="stylesheet" href="../CSS/menu.css">
     <link rel="shortcut icon" href="../resource/logo.jpg">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/administrador.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
     <?php 
 include '../HTML/menu.html';
 ?>
-<style> 
-#lista{
-    position: absolute;
-    width: 500px;
-    left:calc( 50% - 250px);
 
-}
-#btnAgr{
-    position:absolute;
-    background-color:rgb(246, 219, 167);
-    text-align:center;
-    width: 200px;
-    height: 25px;
-    border-radius: 3%;
-    left: calc( 50% - 100px);
-}
-#btnAgr:hover{
-    background-color:red;
-}
-</style>
 </head>
 <body>
 <center>

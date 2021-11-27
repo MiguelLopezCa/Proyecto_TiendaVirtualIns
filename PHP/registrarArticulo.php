@@ -46,7 +46,28 @@
     </style>
 
     <?php 
+<<<<<<< HEAD
 
+=======
+$instrumento =[
+    'nombre'=>$_POST['nombre'],
+    'descripcion'=>$_POST['descripcion'],
+    'link'=>$_POST['link'],
+    'id_tipoInstrumento'=>$_POST['rol'],
+];
+$servidorDB = "localhost:3306";
+$nombreDb = "tiendavirtual";
+$usuarioDb = "root";
+$passwordDB = "";
+
+// Create connection
+$conn = new mysqli($servidorDB, $usuarioDb,$passwordDB,$nombreDb );
+$sql="insert into instrumento (nombre , descricion , link , id_tipoInstrumento )";
+$sql.="values('".$instrumento['nombre'] ."','".$instrumento['descripcion'] ."','".$instrumento['link'] ."','".$instrumento['id_tipoInstrumento'] ."')";
+
+
+$resultadoQuery= $conn->query($sql);
+>>>>>>> 92fd0047fcffd1bbcdd6a9fbcbdb6460592d573f
 
 try {
     $instrumento =[
@@ -88,5 +109,6 @@ try {
         echo '<a href= "creacionDeArticulos.php">Volver</a>';
     }
     ?>
+   
 </body>
 </html>

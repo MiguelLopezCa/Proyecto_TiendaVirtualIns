@@ -1,7 +1,9 @@
 <?php 
+$id = empty($_GET['id'])? null: $_GET['id'];
 $tituloForm = empty($id)?"Registrar Articulo":"Modificar";
 $actionForm = empty($id)?"registrarArticulo.php":"actualizar.php";
 $instrumento =[
+    'id'=>'',
     'nombre'=>'',
     'descripcion'=>'',
     'link'=>'',
@@ -13,7 +15,7 @@ $instrumento =[
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Crear usuario</title>
+    <title>Agregar instrumento</title>
     <link rel="stylesheet" href="../css/creacionDeArticulos.css">
 </head>
 <body style=" background-image: url(../resource/fondo1.jpg) ;">
@@ -35,7 +37,7 @@ $instrumento =[
         $resultadoQuery= $conn->query($sql);
         if($resultadoQuery->num_rows>0){
             while($row= $resultadoQuery->fetch_assoc()){
-             
+                $instrumento['id']=$row['ide'];
                 $instrumento['nombre']=$row['nombre'];
                 $instrumento['descripcion']=$row['descripcion'];
                 $instrumento['link']=$row['link'];
@@ -84,6 +86,5 @@ $instrumento =[
     </form>
    
 </div>
-<script type="text/javascript" src="../javaScript/crearUsuario.js"></script>
 </body>
  </html>
