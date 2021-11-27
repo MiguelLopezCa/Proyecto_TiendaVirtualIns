@@ -49,37 +49,61 @@ body{
     left: calc(30% - 100px);
     top: 10%;
 }
-
+#nombre{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 10%;
+}
 #lblApellido{
     position: absolute;
     left: calc(30% - 100px);
     top: 20%;
 }
-
+#apellido{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 20%;
+}
 #lblIden{
     position: absolute;
     left: calc(30% - 100px);
     top: 30%;
 }
-
+#identificacion{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 30%;
+}
 #contra{
     position: absolute;
     left: calc(30% - 100px);
     top: 40%;
 }
-
+#contraseña{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 40%;
+}
 #contra1{
     position: absolute;
     left: calc(30% - 100px);
     top: 50%;
 }
-
+#contraseña1{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 50%;
+}
 #lblUsuario{
     position: absolute;
     left: calc(30% - 100px);
     top: 60%; 
 }
-
+#usuario{
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 60%; 
+}
 #lblRol{
     position: absolute;
     left: calc(30% - 100px);
@@ -96,7 +120,11 @@ body{
     left: calc( 30% - 100px);
     top: 80%;
 }
-
+#telefono{
+    position: absolute;
+    left: calc( 50% - 100px);
+    top: 80%;
+}
 #btnGuardar{
     position: absolute;
     top:90%;
@@ -131,48 +159,4 @@ background-color: orange;
 #btnCancelar:hover{
     cursor: pointer;
     background-color: red;
-    }
-    #nombre{
-        position: absolute;
-        left: calc(50% - 100px);
-        top: 10%;
-    }
-    #apellido{
-        position: absolute;
-        left: calc(50% - 100px);
-        top: 20%;
-    }
-    #identificacion{
-        position: absolute;
-        left: calc(50% - 100px);
-        top: 30%;
-    }
-    #contraseña{
-        position: absolute;
-        left: calc(50% - 100px);
-        top: 40%;
-    }
-    #contraseña1{
-        position: absolute;
-        left: calc(50% - 100px);
-        top: 50%;
-    }
-    #usuario{
-        position: absolute;
-        left: calc(50% - 100px);
-        top: 60%; 
-    }
-    #telefono{
-        position: absolute;
-        left: calc( 50% - 100px);
-        top: 80%;
-    }
-    .formulario__input-error {
-        font-size: 12px;
-        margin-bottom: 0;
-        display: none;
-    }
-    
-    .formulario__input-error-activo {
-        display: block;
     }
